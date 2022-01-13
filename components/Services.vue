@@ -1,0 +1,35 @@
+<template>
+  <section class="services-area pt-120 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="font-barlow font-light uppercase text-gray-700 text-3xl mt-12 mb-8 text-center">Ostale usluge — <span class="text-fizio-500 text-5xl">Zdravlje</span></h2>
+    <div class="flex flex-wrap justify-center flex-col sm:flex-row sm:space-x-7">
+      <router-link :to="'/usluge/' + item.slug" v-for="item in sitedata.zdravlje" :key="item.id" class="grow-0 rounded-3xl flex overflow-hidden flex-col outline outline-4 outline-transparent	 hover:outline-fizio-500 hover:border-fizio-500 shadow-xl hover:shadow-sm transform duration-200 w-1/5 hover:cursor-pointer mb-10">
+        <img src="~assets/img/demo.jpg" alt="">
+        <div class="p-4">
+          <h2 class="font-poppins font-bold text-gray-700 text-xl mb-3">{{ item.title }}</h2>
+          <h3 class="text-gray-600 mb-3 text-base font-open">{{ item.short_dec }}</h3>
+        </div>
+      </router-link>
+    </div>
+    <h2 class="font-barlow font-light uppercase text-gray-700 text-3xl mt-12 mb-8 text-center">Ostale usluge — <span class="text-fizio-500 text-5xl">Ljepota</span></h2>
+    <div class="flex flex-wrap justify-center flex-col sm:flex-row sm:space-x-7">
+      <router-link :to="'/usluge/' + item.slug" v-for="item in sitedata.ljepota" :key="item.id" class="grow-0 rounded-3xl flex overflow-hidden flex-col outline outline-4 outline-transparent	 hover:outline-fizio-500 hover:border-fizio-500 shadow-xl hover:shadow-sm transform duration-200 w-1/5 hover:cursor-pointer mb-10">
+        <img src="~assets/img/demo.jpg" alt="">
+        <div class="p-4">
+          <h2 class="font-poppins font-bold text-gray-700 text-xl mb-3">{{ item.title }}</h2>
+          <h3 class="text-gray-600 mb-3 text-base font-open">{{ item.short_dec }}</h3>
+        </div>
+      </router-link>
+    </div>
+  </section>
+
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+import { ChevronRightIcon } from '@heroicons/vue/solid'
+
+import { servicesList } from '/stores/services'
+const sitedata = servicesList()
+
+</script>

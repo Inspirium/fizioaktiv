@@ -1,14 +1,16 @@
 <template>
-  <div>
-    <Logos mb-6 />
-    <Suspense>
-      <PageView />
-      <template #fallback>
-        <div op50 italic>
-          <span animate-pulse>Loading...</span>
-        </div>
-      </template>
-    </Suspense>
-    <InputEntry />
-  </div>
+  <Hero />
+  <Zdravlje />
+  <Ljepota />
+  <Tim />
+
 </template>
+
+<script setup lang="ts">
+import Hero from '~/components/Hero'
+import Test from '~/components/Test'
+import Zdravlje from '~/components/Zdravlje'
+import Ljepota from '~/components/Services.vue'
+import Tim from '~/components/Tim'
+
+</script>

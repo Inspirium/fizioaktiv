@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300,400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
 html,
 body,
 #app {
@@ -9,4 +14,12 @@ body,
 html.dark {
   background: #222;
   color: white;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  @apply font-poppins font-bold text-gray-700 text-3xl mb-3;
 }
