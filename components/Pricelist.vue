@@ -1,12 +1,12 @@
 <template>
   <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
     <h2 class="font-barlow font-light uppercase text-gray-700 text-6xl mb-4 text-center">Cjenik masaža</h2>
-    <p class="text-gray-400 text-2xl mb-8">Izdvojeno iz ukupnog cjenika</p>
+    <p class="text-gray-400 text-2xl mb-8">Izdvojeno iz ukupnog cjenika {{ part }}</p>
 
     <div class="">
       <div class="table-fixed m-auto w-1/2">
         <div class="border-t border-gray-200 divide-y divide-gray-200">
-          <template v-for="section in sitedata.cjenik.masaze" :key="section.name">
+          <template v-for="section in sitedata.cjenik[part]" :key="section.name">
             <div>
               <div class="py-3 pl-6 bg-gray-50 text-xl font-bold text-gray-900 text-left font-poppins">{{ section.name }}</div>
             </div>
@@ -38,9 +38,7 @@ const props = defineProps( {
 import { servicesList } from '/stores/services'
 const sitedata = servicesList()
 
-const priceListPart = computed(() => {
-  return sitedata.cjenik + '.' + props.pricelistPart
-})
+const part = props.pricelistPart
 
 </script>
 

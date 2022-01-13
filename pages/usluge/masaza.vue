@@ -1,5 +1,16 @@
 <template>
-  <Heroservices />
+  <Heroservices>
+    <slot>
+      <span class="px-5 py-2 text-white text-base font-semibold leading-5 uppercase tracking-wide bg-fizio-500 rounded-full">Uđite u svijet relaksacije</span>
+      <h1 class="mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+        <span class="block text-gray-600 font-barlow uppercase font-light sm:text-8xl">Masaže</span>
+      </h1>
+      <p class="mt-3 text-lg text-gray-600 sm:mt-5 sm:text-2xl">
+        Svi volimo masaže...
+      </p>
+    </slot>
+  </Heroservices>
+
   <main>
     <div class="grid sm:grid-cols-[2rem_auto_250px_800px_250px_auto_2rem] mx-auto text-left text-gray-600 font-open space-y-5">
       <p class="sm:col-start-4 text-2xl mb-8 leading-10 font-semibold font-poppins">Masaža je najstariji oblik liječenja koja se od davnina primjenjuje u medicinske, relaksirajuće i kozmetičke svrhe. Masaža opušta tijelo i uklanja napetost i bolove u mišićima te ubrzava cirkulaciju krvi i limfe, a time smanjujemo bolna stanja, opskrbljujemo tkivo kisikom i hranjivim tvarima.</p>
@@ -20,7 +31,7 @@
     <a href="/kontakt" class="inline-block px-8 mt-8 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
   </main>
   <Contentlead />
-  <Pricelist />
+  <Pricelist pricelistPart="masaze"></Pricelist>
   <Contact />
   <Services />
   <Tim />

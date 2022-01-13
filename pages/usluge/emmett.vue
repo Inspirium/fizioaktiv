@@ -19,8 +19,8 @@
       <p class="sm:col-start-4 text-lg">Emmett  metodom se aktiviraju pohranjeni loši uzorci pokretanja i/ili ravnoteže, te se njihovim otklanjanjem preko rada različitih struktura središnjeg živčanoga sustava stvaraju novi obrasci kretanja, bez boli i s boljom ravnotežom.  </p>
       <p class="sm:col-start-4 text-lg">Također dolazi do opuštanja mišićne i fascijalne napetosti, te se potiče lučenje prirodnih endorfina, poboljšanja cirkulacije i limfne drenaže.
       </p>
-      <p class="sm:col-start-4 text-lg">Emmett tretman se može koristiti samostalno ili u kombinaciji sa bilo kojom fizikalnom ili manuelnom tehnikom i namijenjen je za svakoga tko si želi olakšati bol i nelagodu. O tome ovisi i trajanje tretmana koji ako se koristi samostalno traje 15-45 min ili dulje ako je u kombinaciji sa drugim metodama.
-      <h2 class="sm:col-start-4 pt-4">Kako izgleda Emmett tretman?
+      <p class="sm:col-start-4 text-lg">Emmett tretman se može koristiti samostalno ili u kombinaciji sa bilo kojom fizikalnom ili manuelnom tehnikom i namijenjen je za svakoga tko si želi olakšati bol i nelagodu. O tome ovisi i trajanje tretmana koji ako se koristi samostalno traje 15-45 min ili dulje ako je u kombinaciji sa drugim metodama.</p>
+      <h2 class="sm:col-start-4 pt-4">Kako izgleda Emmett tretman?</h2>
       <p class="sm:col-start-4 text-lg">Klijenti mogu biti tretirani u sjedećem, stojećem ili ležećem položaju. Tretman se provodi izravno na koži klijenta ili preko odjeće. Pritisak na Emmett točke je vrlo nježan i klijent ne osjeća bol pri izvođenju tretmana.
       </p>
       <h2 class="sm:col-start-4 pt-4">Kod koga se koristi EMMETT tehnika?
@@ -44,7 +44,7 @@
     <a href="/kontakt" class="inline-block px-8 mt-8 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
   </main>
   <Contentlead />
-  <Pricelist />
+  <Pricelist pricelistPart="emmett"></Pricelist>
   <Contact />
   <Services />
   <Tim />
