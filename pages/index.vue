@@ -1,7 +1,6 @@
 <template>
   <Hero />
-  <Zdravlje />
-  <Ljepota />
+  <Services />
   <Tim />
 
 </template>
@@ -9,8 +8,7 @@
 <script setup lang="ts">
 import Hero from '~/components/Hero'
 import Test from '~/components/Test'
-import Zdravlje from '~/components/Zdravlje'
-import Ljepota from '~/components/Services.vue'
+import Services from '~/components/Services'
 import Tim from '~/components/Tim'
 
 </script>

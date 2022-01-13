@@ -6,7 +6,7 @@
     <div class="">
       <div class="table-fixed m-auto w-1/2">
         <div class="border-t border-gray-200 divide-y divide-gray-200">
-          <template v-for="section in sitedata.cjenik .masaze" :key="section.name">
+          <template v-for="section in sitedata.cjenik.masaze" :key="section.name">
             <div>
               <div class="py-3 pl-6 bg-gray-50 text-xl font-bold text-gray-900 text-left font-poppins">{{ section.name }}</div>
             </div>
@@ -43,3 +43,9 @@ const priceListPart = computed(() => {
 })
 
 </script>
+
+
+
+
+
+
