@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import { ref, defineProps, watch, defineComponent, h } from 'vue'
+import Heroservices from '~/components/Heroservices'
+import Contact from '~/components/Contact'
+import Contentlead from '~/components/Contentlead'
+import Tim from '~/components/Tim'
+import Pricelist from '~/components/Pricelist'
+import Services from '~/components/Services'
+
+const route = useRoute()
+
+console.log(route)
+
+</script>
+
 <template>
   <div class="">
     <Heroservices>
@@ -38,18 +53,3 @@
     <Tim />
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref, defineProps, watch, defineComponent, h } from 'vue'
-import Heroservices from '~/components/Heroservices'
-import Contact from '~/components/Contact'
-import Contentlead from '~/components/Contentlead'
-import Tim from '~/components/Tim'
-import Pricelist from '~/components/Pricelist'
-import Services from '~/components/Services'
-
-const route = useRoute()
-
-console.log(route)
-
-</script>
