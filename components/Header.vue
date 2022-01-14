@@ -8,7 +8,7 @@ const route = useRoute()
 
 const navigation = ref([
   { name: 'Početna', href: '/',  current: route.path === '/' },
-  { name: 'Usluge', href: '/usluge', current: route.path === '/usluge' },
+  { name: 'Usluge', href: '/usluge', current: route.path.includes('/usluge') },
   { name: 'Terapeuti', href: '/terapeuti', current: route.path === '/terapeuti' },
   { name: 'Cjenik', href: '/cjenik', current: route.path === '/cjenik' },
   { name: 'Kontakt', href: '/kontakt', current: route.path === '/kontakt' },
