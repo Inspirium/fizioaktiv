@@ -1,18 +1,24 @@
 <script setup lang="ts">
-import { ref, component } from 'vue'
+import { ref, computed } from 'vue'
+import { servicesList } from "~/stores/services";
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 import { PlusSmIcon } from '@heroicons/vue/solid'
 
 const route = useRoute()
 
-const navigation = ref([
-  { name: 'Početna', href: '/',  current: route.path === '/' },
-  { name: 'Usluge', href: '/usluge', current: route.path.includes('/usluge') },
-  { name: 'Terapeuti', href: '/terapeuti', current: route.path === '/terapeuti' },
-  { name: 'Cjenik', href: '/cjenik', current: route.path === '/cjenik' },
-  { name: 'Kontakt', href: '/kontakt', current: route.path === '/kontakt' },
-])
+const sitedata = servicesList()
+
+
+const navigation = computed(() => {
+  return [
+    { name: 'Početna', href: '/',  current: route.path === '/' },
+    { name: 'Usluge', href: '/usluge', current: route.path.includes('/usluge') },
+    { name: 'Terapeuti', href: '/terapeuti', current: route.path === '/terapeuti' },
+    { name: 'Cjenik', href: '/cjenik', current: route.path === '/cjenik' },
+    { name: 'Kontakt', href: '/kontakt', current: route.path === '/kontakt' },
+  ]
+})
 
 </script>
 
@@ -35,15 +41,15 @@ const navigation = ref([
           </NuxtLink>
           <div class="hidden md:flex md:space-x-8 justify-between">
 <!--             Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"-->
-            <NuxtLink v-for="item in navigation" :to="item.href" class="transition duration-200 uppercase hover:border-gray-300 hover:text-gray-700 inline-flex font-poppins items-center px-1 pt-1 border-b-4 text-lg font-medium" :class="[item.current ? 'text-fizio-500 border-fizio-500' : 'text-gray-500 border-transparent']">
+            <NuxtLink v-for="item in navigation" :to="item.href" class="transition duration-200 uppercase inline-flex font-barlow items-center px-1 pt-1 border-b-4 text-xl font-medium" :class="[item.current ? 'text-fizio-500 border-fizio-500' : 'text-gray-500 border-transparent']">
               {{ item.name }}
             </NuxtLink>
           </div>
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <button type="button" class="relative inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white shadow-sm hover:bg-gray-700 transition duration-500 bg-gradient-to-r from-orange-500 to-fizio-500 hover:to-rose-600">
+              <button @click="$router.push('/kontakt')" type="button" class="relative inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white shadow-sm hover:bg-gray-700 transition duration-500 bg-gradient-to-r from-orange-500 to-fizio-500 hover:to-rose-600">
                 <PlusSmIcon class="-ml-1 mr-2 h-8 w-8" aria-hidden="true" />
-                <span class="font-semibold uppercase text-xl">Naruči se</span>
+                <span class="font-medium uppercase text-xl">Naruči se</span>
               </button>
             </div>
           </div>

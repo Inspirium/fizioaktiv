@@ -15,7 +15,27 @@ const sitedata = servicesList()
 
 <template>
   <div class="">
-    <Hero />
+<!--    <Hero :image="'cjenik.jpg'">-->
+<!--      <slot>-->
+<!--        <h1 class="text-4xl tracking-tight font-extrabold sm:text-6xl xl:text-6xl">-->
+<!--          <span class="block text-gray-600 font-barlow uppercase font-light sm:text-8xl">Cjenik</span>-->
+<!--        </h1>-->
+<!--        <p class="mt-3 text-xl text-gray-600 sm:mt-5 sm:text-3xl">-->
+<!--          Cijena i kvaliteta idu zajedno-->
+<!--        </p>-->
+<!--      </slot>-->
+<!--    </Hero>-->
+    <Hero :image="'feel_good.jpg'">
+      <slot>
+        <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins sm:text-6xl xl:text-6xl">
+          Cjenik <span class="text-fizio-500"></span>
+        </h1>
+        <p class="mt-3 text-xl text-gray-600 sm:mt-5 sm:text-3xl uppercase">
+          Cijena i kvaliteta idu zajedno
+        </p>
+      </slot>
+    </Hero>
+
     <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
       <h2 class="font-barlow font-light uppercase text-gray-700 text-6xl mb-4 text-center">Cjenik</h2>
       <p class="text-gray-400 text-2xl mb-8">Za umirovljenike odobravamo <span class="font-medium text-fizio-500">10% popusta</span> na sve cijene</p>

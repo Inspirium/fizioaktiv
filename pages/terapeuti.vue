@@ -1,6 +1,16 @@
 <template>
   <div class="">
-    <Hero />
+    <Hero :image="'feel_good.jpg'">
+      <slot>
+        <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins sm:text-6xl xl:text-6xl">
+          Upoznajte <br><span class="text-fizio-500">naš tim</span>
+        </h1>
+        <p class="mt-3 text-xl text-gray-600 sm:mt-5 sm:text-3xl uppercase">
+          Godine iskustva Vama na raspolaganju
+        </p>
+      </slot>
+    </Hero>
+
     <div class="max-w-4xl m-auto ">
       <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
         <h2 class="font-barlow font-light uppercase text-gray-700 text-6xl mb-4 text-center">O nama</h2>
@@ -19,7 +29,6 @@
           <p class="mt-5 font-open text-left text-lg text-gray-700 leading-8">Postoji više vrsta i tehnika masaža a naš tim fizioterapeuta u FizioAktivu provodi medicinsku, sportsku i anticelulitnu masažu koristeći svoje znanje anatomije i fiziologije ljudskog tijela. Postoji više vrsta i tehnika masaža a naš tim fizioterapeuta u FizioAktivu provodi medicinsku, sportsku i anticelunatomije i fiziologije ljudskog tijela. Postoji više vrsta i tehnika masaža a naš tim fizioterapeuta u FizioAktivu provodi medicinsku, sportsku i anticelulitnu masažu koristeći svoje znanje anatomije i fiziologije ljudskog tijela.</p>
           <p class="mt-5 font-open text-left text-lg text-gray-700 leading-8">Postoji više vrsta i tehnika masaža a naš tim fizioterapeuta u FizioAktivu provodi medicinsku, sportsku i anticelulitnu masažu koristeći svoje znanje anatomije i fiziologiskog tijela. Postoji više vrsta i tehnika masaža a naš tim fizioterapeuta u FizioAktivu provodi medicinsku, sportsku i anticelulitnu masažu koristeći svoje znanje anatomije i fiziologije ljudskog tijela.</p>
         </div>
-
       </div>
     </div>
     <Tim />

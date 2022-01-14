@@ -1,112 +1,16 @@
-<template>
-  <footer class="bg-gray-100 text-left" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="xl:col-span-1">
-          <img class="h-16" src="~assets/img/logo.svg" alt="Company name" />
-          <p class="mt-8 text-gray-500 text-xl">Zagrebačka avenija 160, 10000 Zagreb<br>
-            +385 91 5133-721, +385 91 5133-721<br>
-            fizioaktiv@gmail.com</p>
-          <p class="text-fizio-500 uppercase text-base my-5 font-bold font-poppins">
-            Povežite se s nama:
-          </p>
-          <div class="flex space-x-6">
-            <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">{{ item.name }}</span>
-              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-            </a>
-          </div>
-        </div>
-        <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-xl font-semibold text-fizio-500 tracking-wider uppercase">
-                Zdravlje
-              </h3>
-              <ul role="list" class="mt-4 space-y-3">
-                <li v-for="item in sitedata.zdravlje" :key="item.title">
-                  <a :href="item.href" class="text-md font-open text-gray-500 hover:text-fizio-500">
-                    {{ item.title }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-12 md:mt-0">
-              <h3 class="text-xl font-semibold text-fizio-500 tracking-wider uppercase">
-                Ljepota
-              </h3>
-              <ul role="list" class="mt-4 space-y-3">
-                <li v-for="item in sitedata.ljepota" :key="item.title">
-                  <a :href="item.href" class="text-md font-open text-gray-500 hover:text-fizio-500">
-                    {{ item.title }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-xl font-semibold text-fizio-500 tracking-wider uppercase">
-                Company
-              </h3>
-              <ul role="list" class="mt-4 space-y-3">
-                <li v-for="item in navigation.company" :key="item.name">
-                  <a :href="item.href" class="text-md font-open text-gray-500 hover:text-fizio-500">
-                    {{ item.name }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-12 md:mt-0">
-              <h3 class="text-xl font-semibold text-fizio-500 tracking-wider uppercase">
-                Legal
-              </h3>
-              <ul role="list" class="mt-4 space-y-3">
-                <li v-for="item in navigation.legal" :key="item.name">
-                  <a :href="item.href" class="text-md font-open text-gray-500 hover:text-fizio-500">
-                    {{ item.name }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mt-12 border-t border-gray-200 pt-8">
-        <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2022. Fizioaktiv, Obrt za zdravlje i njegu tijela
-        </p>
-      </div>
-    </div>
-  </footer>
-</template>
 <script setup lang="ts">
-import { defineComponent, h } from 'vue'
+import {computed, defineComponent, h} from 'vue'
 import { LocationMarkerIcon, MailOpenIcon, PhoneIcon } from "@heroicons/vue/outline";
 
 import { servicesList } from '/stores/services'
 const sitedata = servicesList()
 
 const navigation = {
-  solutions: [
-    { name: 'Elektro-terapija', href: '#' },
-    { name: 'Elektro-stimulacija', href: '#' },
-    { name: 'UZV terapija', href: '#' },
-    { name: 'Oblikovanje tijela', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Usluge', href: '/usluge' },
+    { name: 'Terapeuti', href: '/terapeuti' },
+    { name: 'Cjenik', href: '/cjenik' },
+    { name: 'Kontakt', href: '/kontakt' },
   ],
   legal: [
     { name: 'Claim', href: '#' },
@@ -189,27 +93,77 @@ const navigation = {
     },
   ],
 }
-const supportLinks = [
-  {
-    name: 'fizioaktiv@gmail.com',
-    href: '#',
-    description:
-        'Pošaljite mail i mi ćemo vam se brzo javiti povratno...',
-    icon: MailOpenIcon,
-  },
-  {
-    name: '091/5122-721, 091/5122-721',
-    href: '#',
-    description:
-        'Nazovite nas i raspitaje se o...',
-    icon: PhoneIcon,
-  },
-  {
-    name: 'Zagrebačka avenija 160, 10000 Zagreb',
-    href: '#',
-    description:
-        '(zgrada pored Konzuma)',
-    icon: LocationMarkerIcon,
-  },
-]
 </script>
+
+<template>
+  <footer class="bg-gray-100 text-left" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="xl:col-span-1">
+          <img class="h-16" src="~assets/img/logo.svg" alt="Company name" />
+          <p class="mt-8 text-gray-500 text-xl">Zagrebačka avenija 160, 10000 Zagreb<br>
+            +385 91 5133-721, +385 91 5133-721<br>
+            fizioaktiv@gmail.com</p>
+          <p class="text-fizio-500 uppercase text-base my-5 font-bold font-poppins">
+            Povežite se s nama:
+          </p>
+          <div class="flex space-x-6">
+            <NuxtLink v-for="item in navigation.social" :key="item.name" :to="item.href" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">{{ item.name }}</span>
+              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-fizio-500 tracking-wider uppercase">
+                Zdravlje
+              </h3>
+              <ul role="list" class="mt-4 space-y-3">
+                <li v-for="item in sitedata.zdravlje" :key="item.title">
+                  <NuxtLink :to="`/usluge/${item.slug}`" class="text-md font-open text-gray-500 hover:text-fizio-500">
+                    {{ item.title }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-12 md:mt-0">
+              <h3 class="text-xl font-semibold text-fizio-500 tracking-wider uppercase">
+                Ljepota
+              </h3>
+              <ul role="list" class="mt-4 space-y-3">
+                <li v-for="item in sitedata.ljepota" :key="item.title">
+                  <NuxtLink :to="`/usluge/${item.slug}`" class="text-md font-open text-gray-500 hover:text-fizio-500">
+                    {{ item.title }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-fizio-500 tracking-wider uppercase">
+                FizioAktiv
+              </h3>
+              <ul role="list" class="mt-4 space-y-3">
+                <li v-for="item in navigation.company" :key="item.name">
+                  <NuxtLink :to="item.href" class="text-md font-open text-gray-500 hover:text-fizio-500">
+                    {{ item.name }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-gray-200 pt-8">
+        <p class="text-base text-gray-400 xl:text-center">
+          &copy; 2022. Fizioaktiv, Obrt za zdravlje i njegu tijela
+        </p>
+      </div>
+    </div>
+  </footer>
+</template>
+

@@ -41,7 +41,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'ANF terapija',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'anf',
-        image: '',
+        image: '/public/anf.jpg',
       },
       {
         id: 6,
@@ -67,7 +67,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Oblikovanje tijela - VacuSlim 48',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'vacuslim',
-        image: '',
+        image: '/assets/img/main.jpg',
       },
       {
         id: 2,
@@ -75,7 +75,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Oblikovanje tijela - Beauty Expert 4 u 1',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'bautyexpert',
-        image: '',
+        image: '../assets/img/main.jpg',
       },
       {
         id: 3,
@@ -83,7 +83,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Anticelulitna masaža',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'anticelulitna',
-        image: '',
+        image: '/public/anticelulitna_masaza1.jpg',
       },
     ],
     cjenik: {
