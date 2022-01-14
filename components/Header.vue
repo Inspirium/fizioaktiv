@@ -1,3 +1,21 @@
+<script setup lang="ts">
+import { ref, component } from 'vue'
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
+import { MenuIcon, XIcon } from '@heroicons/vue/outline'
+import { PlusSmIcon } from '@heroicons/vue/solid'
+
+const route = useRoute()
+
+const navigation = ref([
+  { name: 'Početna', href: '/',  current: route.path === '/' },
+  { name: 'Usluge', href: '/usluge', current: route.path === '/usluge' },
+  { name: 'Terapeuti', href: '/terapeuti', current: route.path === '/terapeuti' },
+  { name: 'Cjenik', href: '/cjenik', current: route.path === '/cjenik' },
+  { name: 'Kontakt', href: '/kontakt', current: route.path === '/kontakt' },
+])
+
+</script>
+
 <template>
   <Disclosure as="nav" class="bg-white shadow" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,27 +29,15 @@
               <XIcon v-else class="block h-6 w-6" aria-hidden="true" />
             </DisclosureButton>
           </div>
-          <a href="/" class="flex-shrink-0 flex items-center">
+          <NuxtLink to="/" class="flex-shrink-0 flex items-center">
             <img class="block lg:hidden h-14 w-auto" src="~assets/img/logo_sign.svg" alt="FizioAktiv" />
             <img class="hidden lg:block h-14 w-auto" src="~assets/img/logo.svg" alt="FizioAktiv" />
-          </a>
+          </NuxtLink>
           <div class="hidden md:flex md:space-x-8 justify-between">
 <!--             Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"-->
-            <a href="/" class="uppercase border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex font-poppins items-center px-1 pt-1 border-b-2 text-lg font-medium">
-              Početna
-            </a>
-            <a href="/" class="uppercase border-fizio-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 font-poppins text-lg font-medium">
-              Usluge
-            </a>
-            <a href="/terapeuti" class="uppercase border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex font-poppins items-center px-1 pt-1 border-b-2 text-lg font-medium">
-              Terapeuti
-            </a>
-            <a href="/cjenik" class="uppercase border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex font-poppins items-center px-1 pt-1 border-b-2 text-lg font-medium">
-              Cjenik
-            </a>
-            <a href="/kontakt" class="uppercase border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex font-poppins items-center px-1 pt-1 border-b-2 text-lg font-medium">
-              Kontakt
-            </a>
+            <NuxtLink v-for="item in navigation" :to="item.href" class="transition duration-200 uppercase hover:border-gray-300 hover:text-gray-700 inline-flex font-poppins items-center px-1 pt-1 border-b-4 text-lg font-medium" :class="[item.current ? 'text-fizio-500 border-fizio-500' : 'text-gray-500 border-transparent']">
+              {{ item.name }}
+            </NuxtLink>
           </div>
           <div class="flex items-center">
             <div class="flex-shrink-0">
@@ -47,10 +53,4 @@
   </Disclosure>
 </template>
 
-<script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { MenuIcon, XIcon } from '@heroicons/vue/outline'
-import { PlusSmIcon } from '@heroicons/vue/solid'
 
-
-</script>

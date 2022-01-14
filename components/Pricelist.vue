@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <a href="/cjenik" class="inline-block px-8 mt-8 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Pogledaj cijeli cjenik usluga</a>
+    <NuxtLink to="/cjenik" class="inline-block px-8 mt-8 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Pogledaj cijeli cjenik usluga</NuxtLink>
   </div>
 </template>
 

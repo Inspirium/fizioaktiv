@@ -66,7 +66,7 @@ export const servicesList = defineStore('serviceList', {
         href: '#',
         title: 'Oblikovanje tijela - VacuSlim 48',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
-        link: '',
+        slug: 'vacuslim',
         image: '',
       },
       {
@@ -74,7 +74,7 @@ export const servicesList = defineStore('serviceList', {
         href: '#',
         title: 'Oblikovanje tijela - Beauty Expert 4 u 1',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
-        link: '',
+        slug: 'bautyexpert',
         image: '',
       },
       {
@@ -82,7 +82,7 @@ export const servicesList = defineStore('serviceList', {
         href: '#',
         title: 'Anticelulitna masaža',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
-        link: '',
+        slug: 'anticelulitna',
         image: '',
       },
     ],

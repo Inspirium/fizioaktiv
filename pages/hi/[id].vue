@@ -25,9 +25,9 @@ watchEffect(() => {
         <span op-50>Also as known as:</span>
         <ul>
           <li v-for="otherName in user.otherNames" :key="otherName">
-            <router-link :to="`/hi/${otherName}`" replace>
+            <nuxt-link :to="`/hi/${otherName}`" replace>
               {{ otherName }}
-            </router-link>
+            </nuxt-link>
           </li>
         </ul>
       </p>
