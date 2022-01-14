@@ -1,7 +1,9 @@
 <template>
-  <Hero />
-  <Services />
-  <Tim />
+  <div class="">
+    <Hero />
+    <Services />
+    <Tim />
+  </div>
 
 </template>
 

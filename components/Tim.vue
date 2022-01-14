@@ -21,7 +21,7 @@
         </ul>
       </div>
     </div>
-    <nuxt-link to="cjenik" class="inline-block px-8 mb-12 bg-gradient-to-r from-orange-500 to-rose-500 border border-transparent rounded-md shadow py-4 text-xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Saznaj više o terapeutima</nuxt-link>
+    <nuxt-link to="/cjenik" class="inline-block px-8 mb-12 bg-gradient-to-r from-orange-500 to-rose-500 border border-transparent rounded-md shadow py-4 text-xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Saznaj više o terapeutima</nuxt-link>
 
   </div>
 </template>
