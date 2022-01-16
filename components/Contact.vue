@@ -51,7 +51,7 @@ const supportLinks = [
     icon: MailOpenIcon,
   },
   {
-    type: 'Adresa',
+    type: 'Lokacija',
     name: 'Zagrebačka avenija 160, 10000 Zagreb',
     href: '#',
     description:

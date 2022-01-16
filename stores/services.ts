@@ -33,7 +33,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Emmett',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'emmett',
-        image: '',
+        image: '/anf.jpg',
       },
       {
         id: 5,
@@ -41,7 +41,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'ANF terapija',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'anf',
-        image: '/public/anf.jpg',
+        image: '../anf.jpg',
       },
       {
         id: 6,
@@ -83,7 +83,15 @@ export const servicesList = defineStore('serviceList', {
         title: 'Anticelulitna masaža',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'anticelulitna',
-        image: '/public/anticelulitna_masaza1.jpg',
+        image: '/anticelulitna_masaza1.jpg',
+      },
+      {
+        id: 4,
+        href: '#',
+        title: 'Limfna drenaža',
+        short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
+        slug: 'limfna',
+        image: '/anticelulitna_masaza1.jpg',
       },
     ],
     cjenik: {

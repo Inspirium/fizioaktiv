@@ -2,7 +2,7 @@
   <div class="">
     <Hero :image="'cjenik.jpg'">
       <slot>
-        <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins sm:text-6xl xl:text-6xl">
+        <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins lg:text-6xl">
           Zdravlje<br><span class="text-fizio-500">&Ljepota</span>
         </h1>
         <p class="mt-3 text-xl text-gray-600 sm:mt-5 sm:text-3xl uppercase">

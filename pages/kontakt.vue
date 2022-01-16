@@ -23,9 +23,9 @@ const people = [
 
 <template>
   <div class="">
-    <Hero :image="'cjenik.jpg'">
+    <Hero :image="'bowen.jpg'">
       <slot>
-        <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins sm:text-6xl xl:text-6xl">
+        <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins lg:text-6xl">
           Kontaktirajte <span class="text-fizio-500">nas</span>
         </h1>
         <p class="mt-3 text-xl text-gray-600 sm:mt-5 sm:text-3xl uppercase">
@@ -33,64 +33,74 @@ const people = [
         </p>
       </slot>
     </Hero>
-    <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
-      <h2 class="font-barlow font-light uppercase text-gray-700 text-6xl mb-4 text-center">Javite se</h2>
-      <p class="text-gray-400 text-2xl mb-8">Popunite i pošaljite formular i mi ćemo vam se javiti u <span class="font-medium text-fizio-500">najkraćem mogućem</span> roku</p>
-    </div>
-    <div class="max-w-4xl m-auto mb-12 text-left space-y-6">
-      <div class="mb-12">
-        <label for="name" class="font-poppins font-bold text-gray-700 text-2xl mb-3">Ime i prezime</label>
-        <div class="mt-1">
-          <input type="text" name="name" id="name" class="shadow-sm focus:ring-fizio-500 focus:border-fizio-500 block w-full sm:text-xl py-4 pl-6 border-gray-300 rounded-md" />
-        </div>
-      </div>
-      <div>
-        <label for="email" class="font-poppins font-bold text-gray-700 text-2xl mb-3">E-mail</label>
-        <div class="mt-1">
-          <input type="email" name="email" id="email" class="shadow-sm focus:ring-fizio-500 focus:border-fizio-500 block w-full sm:text-xl py-4 pl-6 border-gray-300 rounded-md" />
-        </div>
-      </div>
-      <div>
-        <label for="tel" class="font-poppins font-bold text-gray-700 text-2xl mb-3">Mobitel</label>
-        <div class="mt-1">
-          <input type="tel" name="tel" id="tel" class="shadow-sm focus:ring-fizio-500 focus:border-fizio-500 block w-full sm:text-xl py-4 pl-6 border-gray-300 rounded-md" />
-        </div>
-      </div>
 
-      <div class="flex space-x-12 justify-center">
-        <div class="shrink self-center font-poppins font-bold text-gray-700 text-2xl mb-3">Za koje ste usluge zainteresirani</div>
-        <fieldset class="w-1/3">
-          <legend class="font-poppins font-bold text-gray-400 text-xl mb-1">Zdravlje</legend>
-          <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
-            <div v-for="(person, personIdx) in sitedata.zdravlje" :key="personIdx" class="relative flex items-start py-4">
-              <div class="min-w-0 flex-1 text-sm">
-                <label :for="`person-${person.id}`" class="font-medium text-lg text-gray-500 select-none">{{ person.title }}</label>
-              </div>
-              <div class="ml-12 flex items-center h-5">
-                <input :id="`person-${person.id}`" :name="`person-${person.id}`" type="checkbox" class="h-6 w-6 text-fizio-500 border-gray-300 focus:ring-fizio-500 focus:border-fizio-500 rounded" />
+    <div class="px-8">
+      <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
+        <h2 class="font-barlow font-light uppercase text-gray-700 text-6xl mb-4 text-center">Javite se</h2>
+        <p class="text-gray-400 text-2xl mb-8">Popunite i pošaljite formular i mi ćemo vam se javiti u <span class="font-medium text-fizio-500">najkraćem mogućem</span> roku</p>
+      </div>
+      <div class="max-w-4xl m-auto mb-12 text-left space-y-6">
+        <div class="mb-12">
+          <label for="name" class="font-poppins font-bold text-gray-700 text-2xl mb-3">Ime i prezime</label>
+          <div class="mt-1">
+            <input type="text" name="name" id="name" class="shadow-sm focus:ring-fizio-500 focus:border-fizio-500 block w-full sm:text-xl py-4 pl-6 border-gray-300 rounded-md" />
+          </div>
+        </div>
+        <div>
+          <label for="email" class="font-poppins font-bold text-gray-700 text-2xl mb-3">E-mail</label>
+          <div class="mt-1">
+            <input type="email" name="email" id="email" class="shadow-sm focus:ring-fizio-500 focus:border-fizio-500 block w-full sm:text-xl py-4 pl-6 border-gray-300 rounded-md" />
+          </div>
+        </div>
+        <div>
+          <label for="tel" class="font-poppins font-bold text-gray-700 text-2xl mb-3">Mobitel</label>
+          <div class="mt-1">
+            <input type="tel" name="tel" id="tel" class="shadow-sm focus:ring-fizio-500 focus:border-fizio-500 block w-full sm:text-xl py-4 pl-6 border-gray-300 rounded-md" />
+          </div>
+        </div>
+
+        <div class="lg:flex lg:space-x-12 justify-center">
+          <div class="lg:shrink self-center font-poppins font-bold text-gray-700 text-2xl mb-3">Za koje ste usluge zainteresirani</div>
+          <fieldset class="lg:w-1/3 mt-12 lg:mt-6">
+            <legend class="font-poppins font-bold text-gray-600 text-xl mb-1">Zdravlje</legend>
+            <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
+              <div v-for="(person, personIdx) in sitedata.zdravlje" :key="personIdx" class="relative flex items-start py-4">
+                <div class="min-w-0 flex-1 text-sm">
+                  <label :for="`person-${person.id}`" class="font-medium text-lg text-gray-500 select-none">{{ person.title }}</label>
+                </div>
+                <div class="ml-12 flex items-center h-5">
+                  <input :id="`person-${person.id}`" :name="`person-${person.id}`" type="checkbox" class="h-6 w-6 text-fizio-500 border-gray-300 focus:ring-fizio-500 focus:border-fizio-500 rounded" />
+                </div>
               </div>
             </div>
-          </div>
-        </fieldset>
-        <fieldset class="w-1/3">
-          <legend class="font-poppins font-bold text-gray-400 text-xl mb-1">Ljepota</legend>
-          <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
-            <div v-for="(person, personIdx) in sitedata.ljepota" :key="personIdx" class="relative flex items-start py-4 items-center">
-              <div class="min-w-0 flex-1 text-sm">
-                <label :for="`person-${person.id}`" class="font-medium text-lg text-gray-500 select-none">{{ person.title }}</label>
-              </div>
-              <div class="ml-12 flex items-center h-5">
-                <input :id="`person-${person.id}`" :name="`person-${person.id}`" type="checkbox" class="h-6 w-6 text-fizio-500 border-gray-300 focus:ring-fizio-500 focus:border-fizio-500 rounded" />
+          </fieldset>
+          <fieldset class="lg:w-1/3 mt-12 lg:mt-6">
+            <legend class="font-poppins font-bold text-gray-600 text-xl mb-1">Ljepota</legend>
+            <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
+              <div v-for="(person, personIdx) in sitedata.ljepota" :key="personIdx" class="relative flex items-start py-4 items-center">
+                <div class="min-w-0 flex-1 text-sm">
+                  <label :for="`person-${person.id}`" class="font-medium text-lg text-gray-500 select-none">{{ person.title }}</label>
+                </div>
+                <div class="ml-12 flex items-center h-5">
+                  <input :id="`person-${person.id}`" :name="`person-${person.id}`" type="checkbox" class="h-6 w-6 text-fizio-500 border-gray-300 focus:ring-fizio-500 focus:border-fizio-500 rounded" />
+                </div>
               </div>
             </div>
+          </fieldset>
+        </div>
+        <div>
+          <div>
+            <label for="comment" class="font-poppins font-bold text-gray-700 text-2xl mb-3">Komentar</label>
+            <div class="mt-1">
+              <textarea rows="4" name="comment" id="comment" class="shadow-sm focus:ring-fizio-500 focus:border-fizio-500 block w-full sm:text-xl py-4 pl-6 border-gray-300 rounded-md" />
+            </div>
           </div>
-        </fieldset>
+        </div>
       </div>
-    </div>
-    <a href="/kontakt" class="inline-block px-8 mb-20 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">pošalji upit</a>
+      <a href="/kontakt" class="inline-block px-8 mb-20 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">pošalji upit</a>
 
-    <Contact></Contact>
+      <Contact></Contact>
+    </div>
   </div>
-
 </template>
 

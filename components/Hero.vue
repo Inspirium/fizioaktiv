@@ -5,7 +5,7 @@ const props = defineProps( {
   image: {
     type: String,
     required: false,
-    default: 'bowen.jpg',
+    default: 'cjenik.jpg',
   }
 })
 
@@ -22,7 +22,7 @@ const heroImage = computed(() => {
       <div class="py-16 max-w-7xl m-auto lg:px-8">
         <div class="lg:grid lg:grid-cols-1 lg:gap-8 lg:max-w-7xl mx-auto ">
           <div class="px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-            <div class="py-6 pr-32">
+            <div class="py-6 sm:pr-32">
               <slot></slot>
             </div>
           </div>
