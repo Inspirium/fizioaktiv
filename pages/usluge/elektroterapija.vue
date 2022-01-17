@@ -52,7 +52,6 @@
 <script setup lang="ts">
 import { ref, defineProps, watch, defineComponent, h } from 'vue'
 import Hero from '~/components/Hero'
-import Hero from '~/components/Hero'
 import Contact from '~/components/Contact'
 import Contentlead from '~/components/Contentlead'
 import Tim from '~/components/Tim'
