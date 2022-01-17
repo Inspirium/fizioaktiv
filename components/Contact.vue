@@ -14,13 +14,15 @@
     <!-- Overlapping cards -->
     <section class="-mt-32 max-w-7xl mx-auto relative z-10 pb-16 px-4 sm:px-6 lg:px-8" aria-labelledby="contact-heading">
       <h2 class="sr-only" id="contact-heading">Contact us</h2>
-      <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+      <div class="grid grid-cols-1 gap-y-6 lg:gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
         <div v-for="link in supportLinks" :key="link.name" class="flex flex-col bg-white rounded-2xl shadow-xl">
-          <div class="flex-1 relative pt-12 px-6 pb-8 md:px-8">
-            <div class="absolute top-0 p-3 inline-block bg-fizio-500 rounded-full shadow-lg transform -translate-y-1/2">
-              <component :is="link.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+          <div class="flex-1 relative pt-6 px-6 pb-6 md:px-8">
+            <div class="flex items-center mb-3">
+              <div class="p-2 mr-4 flex-initial inline-block bg-fizio-500 rounded-full shadow-lg">
+                <component :is="link.icon" class="h-4 w-4 text-white" aria-hidden="true" />
+              </div>
+              <div class="text-2xl font-semibold font-poppins text-fizio-500">{{ link.type }}</div>
             </div>
-            <div class="text-2xl font-semibold mb-3 font-poppins text-fizio-500">{{ link.type }}</div>
             <h3 class="text-2xl font-medium text-gray-900">{{ link.name }}</h3>
             <p class="mt-4 text-base font-open text-gray-500">{{ link.description }}</p>
           </div>

@@ -21,6 +21,31 @@ html.dark {
 @tailwind utilities;
 
 h2 {
-  @apply font-poppins font-bold text-gray-700 text-3xl mb-3;
+  @apply font-poppins font-bold text-gray-700 text-2xl sm:text-3xl mb-3;
 }
+
+.lead {
+  @apply lg:col-start-4 text-xl sm:text-2xl mb-8 leading-8 sm:leading-10 font-semibold font-poppins
+}
+
+ul {
+  @apply lg:col-start-4 pt-4 list-disc font-poppins ml-5
+}
+
+label {
+  @apply font-poppins font-semibold text-gray-700 text-lg sm:text-xl mb-3
+}
+
+.hero-supertitle {
+  @apply px-3 sm:px-5 py-1 sm:py-2 text-white text-xs sm:text-base font-normal sm:font-semibold uppercase tracking-wide bg-fizio-500 rounded-full
+}
+
+.hero-title {
+  @apply mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl lg:w-2/3
+}
+
+.hero-subtitle {
+  @apply mt-3 text-lg text-gray-600 sm:mt-5 sm:text-2xl lg:w-1/2
+}
+
 

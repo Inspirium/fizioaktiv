@@ -5,7 +5,7 @@ const props = defineProps( {
   image: {
     type: String,
     required: false,
-    default: 'cjenik.jpg',
+    default: '/feel_good.jpg',
   },
   content: {
     type: String,
@@ -21,12 +21,12 @@ const heroImage = computed(() => {
 </script>
 
 <template>
-  <div class="sm:col-start-3 sm:col-span-3 flex items-center md:space-x-8 mt-20 mb-10 h-80 overflow-hidden">
-    <div class="rounded-xl bg-gray-100 overflow-hidden w-3/5 flex-shrink-0">
+  <div class="flex flex-col md:flex-row items-center md:space-x-8 mt-20 mb-10 md:h-80 overflow-hidden">
+    <div class="bg-gray-100 overflow-hidden md:w-3/5 flex-shrink-0">
       <img :src="image" class="object-center object-cover" />
     </div>
-    <div class="bg-fizio-100 grow h-full flex flex-col justify-center p-20">
-      <h4 class="font-poppins text-gray-700 text-left font-bold text-2xl">{{ content }}</h4>
+    <div class="bg-fizio-100 grow h-full flex flex-col w-5/6 md:w-full justify-center p-10 sm:p-20 -mt-20 md:mt-0">
+      <h4 class="font-poppins text-gray-500 md:text-gray-700 text-center sm:text-left font-normal uppercase md:font-bold text-lg md:text-2xl">{{ content }}</h4>
       <!--        <p>neki tekstoi</p>-->
     </div>
   </div>

@@ -9,7 +9,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Masaža',
         short_dec: 'Masaža opušta tijelo i uklanja napetost i bolove u mišićima te ubrzava cirkulaciju krvi i limfe, a time smanjujemo bolna stanja, opskrbljujemo tkivo kisikom i hranjivim tvarima',
         slug: 'masaza',
-        image: '',
+        image: '/masaza-usluge.jpg',
       },
       {
         id: 2,
@@ -17,7 +17,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Vježbe',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'vjezbe',
-        image: '',
+        image: '/vjezbe.jpg',
       },
       {
         id: 3,
@@ -25,7 +25,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Bowen',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'bowen',
-        image: '',
+        image: '/bowen-1.jpg',
       },
       {
         id: 4,
@@ -33,7 +33,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Emmett',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'emmett',
-        image: '/anf.jpg',
+        image: '/emmet.jpg',
       },
       {
         id: 5,
@@ -49,7 +49,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Elektro-terapija',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'elektroterapija',
-        image: '',
+        image: '/elektrostimulacija.jpg',
       },
       {
         id: 7,
@@ -57,7 +57,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'UZV terapija',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'uvzterapija',
-        image: '',
+        image: '/uztrazvuk.jpg',
       },
     ],
     ljepota: [
@@ -67,7 +67,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Oblikovanje tijela - VacuSlim 48',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'vacuslim',
-        image: '/assets/img/main.jpg',
+        image: '/anticelulitna_masaza1.jpg',
       },
       {
         id: 2,
@@ -75,7 +75,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Oblikovanje tijela - Beauty Expert 4 u 1',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'bautyexpert',
-        image: '../assets/img/main.jpg',
+        image: '/anticelulitna_masaza1.jpg',
       },
       {
         id: 3,
@@ -91,7 +91,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Limfna drenaža',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'limfna',
-        image: '/anticelulitna_masaza1.jpg',
+        image: '/limfna_drenaza_aparativna.jpg',
       },
     ],
     cjenik: {

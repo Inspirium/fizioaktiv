@@ -1,9 +1,9 @@
 <template>
-  <Heroservices />
+  <Hero />
   <main>
   </main>
-  <div class="lg:col-start-4grid sm:grid-cols-[2rem_auto_250px_800px_250px_auto_2rem] mx-auto text-left text-gray-600 font-open space-y-5 px-8">
-    <p class="lg:col-start-4 text-2xl mb-8 leading-10 font-semibold font-poppins">Masaža je najstariji oblik liječenja koja se od davnina primjenjuje u medicinske, relaksirajuće i kozmetičke svrhe. Masaža opušta tijelo i uklanja napetost i bolove u mišićima te ubrzava cirkulaciju krvi i limfe, a time smanjujemo bolna stanja, opskrbljujemo tkivo kisikom i hranjivim tvarima.</p>
+  <div class="grid lg:grid-cols-[2rem_auto_250px_800px_250px_auto_2rem] mx-auto text-left text-gray-600 font-open space-y-5 px-6">
+    <p class="lead">Masaža je najstariji oblik liječenja koja se od davnina primjenjuje u medicinske, relaksirajuće i kozmetičke svrhe. Masaža opušta tijelo i uklanja napetost i bolove u mišićima te ubrzava cirkulaciju krvi i limfe, a time smanjujemo bolna stanja, opskrbljujemo tkivo kisikom i hranjivim tvarima.</p>
     <p class="lg:col-start-4 text-lg">Postoji više vrsta i tehnika masaža a naš tim fizioterapeuta u FizioAktivu provodi medicinsku, sportsku i anticelulitnu masažu koristeći svoje znanje anatomije i fiziologije ljudskog tijela.</p>
     <h2 class="lg:col-start-4 pt-4">Medicinska masaža</h2>
     <p class="lg:col-start-4 text-lg">Ovaj tip masaže je najučinkovitiji i klijentima najprivlačniji tip masaže, te je odličan način pripreme tkiva za primjenu tehnika mobilizacije i manipulacije. Takva kombinacija donosi dugotrajne rezultate jer se ide s ciljem rješavanja uzroka problema i sastavni je dio plana rehabilitacijskog plana liječenja.</p>
@@ -18,9 +18,9 @@
     </p>
     <p class="lg:col-start-4 text-lg">U FizioAktivu ju radimo u kombinacije s aparaturnom limfnom drenažom i Vacuslim 48 metodama.</p>
   </div>
-  <a href="/kontakt" class="inline-block px-8 mt-8 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
+  <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
 
-  <Contentlead></Contentlead>
+  <Contentlead :image="'/feel_good.jpg'" :content="'Svaka masaža vrijedi kao 7-8 sati sna'"></Contentlead>
   <Pricelist></Pricelist>
 
 
@@ -53,7 +53,7 @@
 <script setup lang="ts">
 import { ref, defineProps, watch, defineComponent, h } from 'vue'
 import { servicesList } from '/stores/services'
-import Heroservices from '~/components/Heroservices'
+import Hero from '~/components/Hero'
 import Contact from '~/components/Contact'
 import Contentlead from '~/components/Contentlead'
 import Tim from '~/components/Tim'
@@ -69,7 +69,7 @@ const services = servicesList()
 
 const people = ref([
     {
-    name: 'Ana Kovačević Drmić',
+    name: 'Ana Kovačević',
     role: 'Viši fizioterapeut',
     imageUrl:
         'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',

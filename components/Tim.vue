@@ -2,8 +2,8 @@
   <div class="bg-gray-900 mt-20">
     <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8">
       <div class="space-y-12">
-        <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-          <h2 class="font-barlow font-light uppercase text-white sm:text-6xl mb-4">Upoznaj naše terapeute</h2>
+        <div class="space-y-5 sm:space-y-4">
+          <h2 class="font-barlow font-light uppercase text-white text-[3rem] leading-[3rem] sm:text-6xl mb-4">Upoznaj naše terapeute</h2>
           <p class="text-2xl text-gray-300">One su lijepe, one su pametne, one znaju kako, one mogu sve. Samo im daj lovu.</p>
         </div>
         <ul role="list" class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:gap-8">
@@ -31,7 +31,7 @@ import {ref} from "vue";
 
 const people = ref([
   {
-    name: 'Ana Kovačević Drmić',
+    name: 'Ana Kovačević',
     role: 'Viši fizioterapeut',
     imageUrl:
         'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
