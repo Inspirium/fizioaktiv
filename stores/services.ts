@@ -57,7 +57,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'UZV terapija',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'uvzterapija',
-        image: '/uztrazvuk.jpg',
+        image: '/ultrazvuk.jpg',
       },
     ],
     ljepota: [
