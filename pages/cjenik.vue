@@ -18,7 +18,7 @@ const sitedata = servicesList()
 <!--    <Hero :image="'cjenik.jpg'">-->
 <!--      <slot>-->
 <!--        <h1 class="text-4xl tracking-tight font-extrabold sm:text-6xl xl:text-6xl">-->
-<!--          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl">Cjenik</span>-->
+<!--          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">Cjenik</span>-->
 <!--        </h1>-->
 <!--        <p class="mt-3 text-xl text-gray-600 sm:mt-5 sm:text-3xl">-->
 <!--          Cijena i kvaliteta idu zajedno-->

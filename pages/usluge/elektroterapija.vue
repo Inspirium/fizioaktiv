@@ -4,7 +4,7 @@
       <slot>
         <span class="hero-supertitle">Strujom do oporavka</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl">ELEKTROTERAPIJA</span>
+          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">ELEKTROTERAPIJA</span>
         </h1>
         <p class="hero-subtitle">
           Elektroterapija je terapijska metoda koja podrazumijeva direktnu primjenu električne struje u svrhu liječenja
@@ -25,14 +25,14 @@
         </p>
         <p class="lg:col-start-4 text-lg"><span class="text-fizio-500 font-semibold">GALVANSKE STRUJE — </span>NISKOFREKVENTNA,KONSTANTNA ISTOSMJERNA STRUJA. Djeluje na živčane završetke odgovorne za prijenos boli tako da se bol smanjuje.</p>
         <p class="lg:col-start-4 text-lg">Koristimo ih za poboljšanje cirkulacije, smanjenje boli, ubrzavanje regeneracije živaca, pareze i paralize.</p>
-        <p class="lg:col-start-4 text-lg"><span class="text-fizio-500 font-semibold">ELEKTROSTIMULACIJA — </span>struje koja izaziva mišićnu kontrakciju pomoću električnih podražaja. Djeluju na mišić na način da izazivaju prirodnu kontrakciju takvu kakva se postiže fizičkom aktivnošću. Time nastojimo spriječiti atrofiju mišića.       </p>
+        <p class="lg:col-start-4 text-lg"><span class="text-fizio-500 font-semibold">ELEKTROSTIMULACIJA — </span>struja koja izaziva mišićnu kontrakciju pomoću električnih podražaja. Djeluju na mišić na način da izazivaju prirodnu kontrakciju takvu kakva se postiže fizičkom aktivnošću. Time nastojimo spriječiti atrofiju mišića.</p>
 
         <h2 class="lg:col-start-4 pt-4">Može se koristiti za:</h2>
 
         <ul class="ullist">
           <li class="font-semibold text-lg">bržu regeneraciju mišića kod sportaša nakon treninga i napornih natjecanja što doprinosi sportskoj izdržljivosti</li>
           <li class="font-semibold text-lg">za sprečavanje atrofije, kod smanjene mišićne snage radi neaktivnosti ili kada zbog povrede ne možemo aktivno izvoditi kontrakcije određenih mišića</li>
-          <li class="font-semibold text-lg">oblikovanje tijela - pravilnim izborom programa možemo jačati mišiće i oblikovati tijelo i utjecati na smanjenje celulita. Elektrostimulacija  aktivira metabolizam  dovodi do procesa  lipolize - otapanje lipocita. Tretman poboljšava cirkulaciju i oksigenaciju tkiva što ubrzava staničnu obnovu.
+          <li class="font-semibold text-lg">oblikovanje tijela - pravilnim izborom programa možemo jačati mišiće i oblikovati tijelo i utjecati na smanjenje celulita. Elektrostimulacija aktivira metabolizam i dovodi do procesa lipolize - otapanje lipocita. Tretman poboljšava cirkulaciju i oksigenaciju tkiva što ubrzava staničnu obnovu.
           </li>
         </ul>
         <p class="lg:col-start-4 text-lg">Općenite kontraindikacije za primjenu elektroterapije su akutne bolesti, upale i infektivna stanja, promjene na koži na mjestu aplikacije, trudnoća i elektrostimulator srca (pacemaker).

@@ -25,18 +25,18 @@ const navigation = computed(() => {
 <template>
   <Disclosure as="nav" class="bg-white shadow" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-24">
+      <div class="flex justify-between h-20 sm:h-32">
         <div class="flex md:justify-between w-full">
           <div class="-ml-2 mr-2 flex items-center md:hidden">
             <!-- Mobile menu button -->
-            <DisclosureButton class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <DisclosureButton class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100">
               <span class="sr-only">Otvori meni</span>
               <MenuIcon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
               <XIcon v-else class="block h-6 w-6" aria-hidden="true" />
             </DisclosureButton>
           </div>
           <NuxtLink to="/" class="flex-shrink-0 flex items-center grow md:grow-0 mr-6">
-            <img class="sm:h-12 md:h-14 w-auto mx-auto" src="~assets/img/logo.svg" alt="FizioAktiv" />
+            <img class="sm:h-16 w-auto mx-auto" src="~assets/img/logo.svg" alt="FizioAktiv" />
           </NuxtLink>
           <div class="hidden md:flex md:space-x-4 xl:space-x-8 justify-between">
 <!--             Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"-->

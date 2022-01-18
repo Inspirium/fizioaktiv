@@ -45,7 +45,7 @@ label {
 }
 
 .hero-subtitle {
-  @apply mt-3 text-lg text-gray-600 sm:mt-5 sm:text-2xl lg:w-1/2
+  @apply mt-3 text-lg text-gray-800 sm:mt-5 sm:text-2xl lg:w-1/2
 }
 
 

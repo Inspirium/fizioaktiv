@@ -19,7 +19,7 @@ console.log(route)
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl">Masaže</span>
+          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">Masaže</span>
         </h1>
         <p class="hero-subtitle">
           Svi volimo masaže...
@@ -35,7 +35,7 @@ console.log(route)
         <p class="lg:col-start-4 text-lg">Ovaj tip masaže je najučinkovitiji i klijentima najprivlačniji tip masaže, te je odličan način pripreme tkiva za primjenu tehnika mobilizacije i manipulacije. Takva kombinacija donosi dugotrajne rezultate jer se ide s ciljem rješavanja uzroka problema i sastavni je dio plana rehabilitacijskog plana liječenja.</p>
         <p class="lg:col-start-4 text-lg">Dobrobiti medicinske masaže su značajne,a kao najvažnije bi napomenuli uklanjanje napetosti i bolova muskulature te smanjenje psihičkih napetosti i glavobolja.</p>
         <h2 class="mt-5 lg:col-start-4 pt-4">Sportska masaža</h2>
-        <p class="lg:col-start-4 text-lg">Sportska masaža pomaže poboljšanju tjelesnih sposobnosti kod sportaša. Pospješuje zagrijavanje i prokrvljenost mišića. Kod pojačanog mišićnog napora dolazi do nakupljanja mliječne kiseline i stoga je sportska masaža važna za brz oporavak kod sportaša poslije intenzivnog treninga. Tijelu je nakon napora potreban odmor da bi se lakše oporavio od treninga ,a najbolji način za ubrzavanje oporavka mišića je sportska masaža.</p>
+        <p class="lg:col-start-4 text-lg">Sportska masaža pomaže poboljšanju tjelesnih sposobnosti kod sportaša. Pospješuje zagrijavanje i prokrvljenost mišića. Kod pojačanog mišićnog napora dolazi do nakupljanja mliječne kiseline i stoga je sportska masaža važna za brz oporavak poslije intenzivnog treninga, a najbolji način za ubrzavanje oporavka mišića je sportska masaža.</p>
         <h2 class="mt-5 lg:col-start-4 pt-4">Anticelulitna masaža</h2>
         <p class="lg:col-start-4 text-lg">Anticelulitna masaža je jedan od najučinkovitijih saveznika u borbi protiv omraženog celulita.
           Izvodi se brzim dinamičkim pokretima, srednjeg do jačeg intenziteta, ovisno o dogovoru s klijenticom. Potiče cirkulaciju krvi i limfe, otklanja iz tijela otpadne tvari i razgrađuje celulit.

@@ -175,8 +175,7 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'UZV terapija',
           items: [
-            { name: 'UZV 10 min', price: '150 kn' },
-            { name: 'Aparaturna limfna drenaža-30 min', price: '100 kn' },
+            { name: 'UZV 10 min', price: '50 kn' },
           ],
         }
       ],
