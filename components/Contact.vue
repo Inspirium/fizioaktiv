@@ -54,7 +54,7 @@ const supportLinks = [
   },
   {
     type: 'Lokacija',
-    name: 'Zagrebačka avenija 160, 10000 Zagreb',
+    name: 'Zagrebačka avenija 106, 10000 Zagreb',
     href: '#',
     description:
         '(zgrada pored Konzuma)',

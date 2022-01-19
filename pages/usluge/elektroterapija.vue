@@ -4,7 +4,7 @@
       <slot>
         <span class="hero-supertitle">Strujom do oporavka</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">ELEKTROTERAPIJA</span>
+          <span>ELEKTROTERAPIJA</span>
         </h1>
         <p class="hero-subtitle">
           Elektroterapija je terapijska metoda koja podrazumijeva direktnu primjenu električne struje u svrhu liječenja

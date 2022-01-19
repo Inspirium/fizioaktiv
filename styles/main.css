@@ -41,11 +41,29 @@ label {
 }
 
 .hero-title {
-  @apply mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl lg:w-2/3
+  @apply mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl lg:w-3/4
+}
+
+.hero-title span {
+  @apply block text-gray-600 font-barlow uppercase font-medium text-4xl sm:font-light sm:text-7xl break-words
 }
 
 .hero-subtitle {
   @apply mt-3 text-lg text-gray-800 sm:mt-5 sm:text-2xl lg:w-1/2
 }
+
+.hero-main {
+  @apply bg-fizio-100/70 flex items-center lg:justify-start sm:bg-transparent py-16 max-w-7xl m-auto lg:px-8 md:min-h-[300px]
+}
+.hero-container {
+  @apply lg:max-w-7xl mx-auto lg:ml-0
+}
+.hero-box {
+  @apply px-4 lg:text-left lg:flex lg:items-center
+}
+.hero-box-inner {
+  @apply sm:pl-12 w-full lg:min-w-[800px]
+}
+
 
 

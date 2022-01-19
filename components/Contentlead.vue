@@ -26,7 +26,7 @@ const heroImage = computed(() => {
       <img :src="image" class="object-center object-cover" />
     </div>
     <div class="bg-fizio-100 grow h-full flex flex-col w-5/6 md:w-full justify-center p-10 sm:p-20 -mt-20 md:mt-0">
-      <h4 class="font-poppins text-gray-500 md:text-gray-700 text-center sm:text-left font-normal uppercase md:font-bold text-lg md:text-2xl">{{ content }}</h4>
+      <h4 class="font-poppins text-gray-500 md:text-gray-700 text-center sm:text-left font-normal uppercase md:font-semibold text-lg md:text-xl">{{ content }}</h4>
       <!--        <p>neki tekstoi</p>-->
     </div>
   </div>

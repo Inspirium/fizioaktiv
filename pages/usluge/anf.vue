@@ -14,7 +14,7 @@ import Services from '~/components/Services'
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">AMINO NEUROFREKVENCIJSKA TERAPIJA</span>
+          <span>AMINO NEURO-FREKVENCIJSKA TERAPIJA</span>
         </h1>
         <p class="hero-subtitle">
           ANF terapija je revolucionarni holistički pristup boli i upali.

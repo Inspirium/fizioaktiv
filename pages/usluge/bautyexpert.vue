@@ -4,7 +4,7 @@
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">BEAUTY EXPERT 4u1</span>
+          <span>BEAUTY EXPERT 4u1</span>
         </h1>
         <p class="hero-subtitle">
           Beauty expert je odličan uređaj za oblikovanje tijela i smanjenje viška tjelesne težine.

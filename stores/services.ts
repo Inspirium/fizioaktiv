@@ -23,7 +23,7 @@ export const servicesList = defineStore('serviceList', {
         id: 3,
         href: '#',
         title: 'Bowen',
-        short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
+        short_dec: 'Ovim nježnim, holističkim pristupom tijelu tretiraju se mišići, tetive, ligamenti i fascija koja ih obavija, čime se stimuliraju živčani, krvožilni i limfni sustav – te posljedično ublažavaju bolovi.',
         slug: 'bowen',
         image: '/bowen-1.jpg',
       },

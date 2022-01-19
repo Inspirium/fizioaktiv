@@ -2,12 +2,12 @@
   <div class="">
     <Hero :image="'/bowen.jpg'">
       <slot>
-        <span class="hero-supertitle">Liječenje dodirom</span>
+        <span class="hero-supertitle">Riješite se bolova, glavobolje, stresa…</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">Bowen terapija</span>
+          <span>Bowen terapija</span>
         </h1>
         <p class="hero-subtitle">
-          Individualna medicinska gimnastika - vježbe
+          Holistički pristup koji djeluje na uzrok problema, a ne na njegove simptome
         </p>
       </slot>
     </Hero>
@@ -37,7 +37,7 @@
       </div>
       <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
     </main>
-    <Contentlead :image="'/feel_good.jpg'" />
+    <Contentlead :image="'/feel_good.jpg'" :content="'Rezultat Bowen terapije osjećaj je topline, dubokog olakšanja i smanjene napetosti, kao i sposobnost tijela da ponovno uspostavi ravnotežu na emocionalnoj i mentalnoj razini'" />
     <Pricelist pricelistPart="bowen"></Pricelist>
     <Contact />
     <Services />

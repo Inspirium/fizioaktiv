@@ -19,7 +19,7 @@ console.log(route)
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">Masaže</span>
+          <span>Masaže</span>
         </h1>
         <p class="hero-subtitle">
           Svi volimo masaže...

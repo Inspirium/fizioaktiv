@@ -14,7 +14,7 @@ const navigation = computed(() => {
   return [
     { name: 'Početna', href: '/',  current: route.path === '/' },
     { name: 'Usluge', href: '/usluge', current: route.path.includes('/usluge') },
-    { name: 'Terapeuti', href: '/terapeuti', current: route.path === '/terapeuti' },
+    { name: 'O nama', href: '/onama', current: route.path === '/onama' },
     { name: 'Cjenik', href: '/cjenik', current: route.path === '/cjenik' },
     { name: 'Kontakt', href: '/kontakt', current: route.path === '/kontakt' },
   ]

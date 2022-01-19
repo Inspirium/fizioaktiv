@@ -4,7 +4,7 @@
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">EMMETT tehnika</span>
+          <span>EMMETT tehnika</span>
         </h1>
         <p class="hero-subtitle">
           Individualna medicinska gimnastika - vježbe

@@ -4,7 +4,7 @@
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
-          <span class="block text-gray-600 font-barlow uppercase font-light text-6xl sm:text-8xl break-all">Vježbe</span>
+          <span>Vježbe</span>
         </h1>
         <p class="hero-subtitle">
           Individualna medicinska gimnastika - vježbe
