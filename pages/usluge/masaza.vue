@@ -15,7 +15,7 @@ console.log(route)
 
 <template>
   <div class="">
-    <Hero :image="'/feel_good.jpg'">
+    <Hero :image="'/masaza-usluge.jpg'">
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
@@ -47,7 +47,7 @@ console.log(route)
       <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
     </main>
     <Contentlead :image="'/masaza-usluge.jpg'" :content="'Svaka masaža vrijedi kao 7-8 sati sna'"></Contentlead>
-    <Pricelist pricelistPart="masaže"></Pricelist>
+    <Pricelist pricelistPart="masaze"></Pricelist>
     <Contact />
     <Services />
     <Tim />

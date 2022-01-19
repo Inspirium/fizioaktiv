@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <Hero :image="'/uztrazvuk.jpg'">
+    <Hero :image="'/ultrazvuk.jpg'">
       <slot>
         <span class="hero-supertitle">Uđite u svijet relaksacije</span>
         <h1 class="hero-title">
@@ -22,7 +22,7 @@
       </div>
       <a href="/kontakt" class="inline-block px-8 mt-8 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600">Rezerviraj termin!</a>
     </main>
-    <Contentlead :image="'/feel_good.jpg'" />
+    <Contentlead :image="'/ultrazvuk.jpg'" />
     <Pricelist pricelistPart="uzvterapija"></Pricelist>
     <Contact />
     <Services />
