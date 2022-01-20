@@ -6,16 +6,6 @@ import Contentlead from '~/components/Contentlead'
 import Tim from '~/components/Tim'
 import Pricelist from '~/components/Pricelist'
 import Services from '~/components/Services'
-
-useMeta({
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' }
-  ],
-  bodyAttrs: {
-    class: 'test'
-  }
-})
-
 </script>
 
 <template>
@@ -79,6 +69,26 @@ useMeta({
       </div>
       <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
     </main>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
     <Contentlead :image="'/anf.jpg'" :content="'ANF terapija poboljšava signalizaciju živčanog sustava izravno na staničnoj razini, smanjujući simptome kao što su bol i/ili upala i normalizirajući tjelesne funkcije'" />
     <Pricelist pricelistPart="anf"></Pricelist>
     <Contact />

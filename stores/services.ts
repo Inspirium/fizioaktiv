@@ -67,7 +67,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Oblikovanje tijela - VacuSlim 48',
         short_dec: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat',
         slug: 'vacuslim',
-        image: '/vacuslim.jpg',
+        image: '/anticelulitna_masaza1.jpg',
       },
       {
         id: 2,
