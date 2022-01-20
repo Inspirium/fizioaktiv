@@ -24,7 +24,7 @@ import Contact from '~/components/Contact'
     </div>
     <div class="mx-auto max-w-xl text-left">
       <div class="rounded-lg bg-fizio-100 p-10 m-8 sm:-mt-24 ">
-        <div class="font-open first-letter:text-gray-600 text-gray-600 text-sm sm:text-lg first-line:uppercase first-line:tracking-widest first-line:font-semibold first-letter:text-[6.5rem] sm:first-letter:text-[6rem] first-letter:leading-[5rem] first-letter:-ml-[.5rem] first-letter:font-light first-letter:text-slate-900 first-letter:mr-3 first-letter:float-left">FIZIOAKTIV je osnovan krajem 2021. godine s ciljem pružanja usluga u službi zdravlja i ljepote. U njegovo nastajanje i rad uloženo je dugogodišnje iskustvo i entuzijazam našeg tima, čija je misija kroz razne programe masaža, vježbi i terapija pomoći vam održati i unaprijediti zdravlje.
+        <div class="font-open first-letter:text-gray-700 text-gray-700 text-sm sm:text-lg first-line:uppercase first-line:tracking-widest first-line:font-semibold first-letter:text-[6.5rem] sm:first-letter:text-[6rem] first-letter:leading-[5rem] first-letter:-ml-[.5rem] first-letter:font-light first-letter:text-slate-900 first-letter:mr-3 first-letter:float-left">FIZIOAKTIV je osnovan krajem 2021. godine s ciljem pružanja usluga u službi zdravlja i ljepote. U njegovo nastajanje i rad uloženo je dugogodišnje iskustvo i entuzijazam našeg tima, čija je misija kroz razne programe masaža, vježbi i terapija pomoći vam održati i unaprijediti zdravlje.
         </div>
         <div class="text-fizio-500 text-right font-barlow mt-6 text-xl sm:text-2xl font-normal uppercase">Pokreni se! Budi aktivan!</div>
       </div>
