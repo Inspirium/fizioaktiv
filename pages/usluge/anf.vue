@@ -69,7 +69,7 @@ import Services from '~/components/Services'
       </div>
       <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
     </main>
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contacta" method="POST" data-netlify="true">
       <p>
         <label>Your Name: <input type="text" name="name" /></label>
       </p>
