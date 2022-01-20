@@ -14,7 +14,7 @@ import Contact from '~/components/Contact'
     <Hero :image="'/fizioaktiv.jpg'">
       <slot>
         <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins text-5xl lg:text-6xl">
-          Dobrodošli u <span class="text-fizio-500">FizioAktiv</span>
+          Dobro došli u <span class="text-fizio-500">FizioAktiv</span>
         </h1>
         <p class="mt-3 text-xl text-gray-600 sm:mt-5 text-[1.5rem] sm:text-3xl uppercase">
           Tvoje zdravlje je bitno!

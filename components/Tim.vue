@@ -4,7 +4,7 @@
       <div class="space-y-12">
         <div class="space-y-5 sm:space-y-4">
           <h2 class="font-barlow font-light uppercase text-white text-[3rem] leading-[3rem] sm:text-6xl mb-4">Upoznaj naše terapeute</h2>
-          <p class="text-2xl text-gray-300">One su lijepe, one su pametne, one znaju kako, one mogu sve. Samo im daj lovu.</p>
+          <p class="text-2xl text-gray-300">Godine iskustva <span class="text-fizio-500"> Vama</span> na raspolaganju</p>
         </div>
         <div class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:gap-8">
           <div v-for="person in people" :key="person.name" class="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left">
