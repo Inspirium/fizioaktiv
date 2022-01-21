@@ -19,30 +19,6 @@ const form = ref({
   comment: '',
 })
 
-const forma = ref(`<form name="kontakt" method="POST" data-netlify="true" hidden >
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="tel" name="tel" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="comment"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>`)
-
 function encode(data) {
   return Object.keys(data)
   .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
@@ -55,7 +31,7 @@ function handleSubmit() {
   fetch('/', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
+      'Content-Type': 'application/x-www-urlencoded'
     },
     body: encode({
         'form-name': 'Kontakt',
@@ -80,7 +56,6 @@ function handleSubmit() {
 <!--        </p>-->
       </slot>
     </Hero>
-    <div v-html="forma"></div>
 
     <div class="px-8">
       <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
