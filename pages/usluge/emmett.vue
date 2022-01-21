@@ -23,6 +23,8 @@
         </p>
         <p class="lg:col-start-4 text-lg">Emmett tretman može se koristiti samostalno ili u kombinaciji s bilo kojom fizikalnom ili manualnom tehnikom i namijenjen je svakomu tko si želi olakšati bol i nelagodu. O tome ovisi i trajanje tretmana, koji samostalno traje od 20 do 40 minuta ili dulje ako je u kombinaciji s drugim metodama.
         </p>
+        <p class="lg:col-start-4 text-lg">Broj tretmana je individualan i ovisi o načinu na koji tretman djeluje na mišiće pojedine osobe. Potrebno ih je ponavljati do potpunog oporavka, no preporuka je da se napravi serija od barem tri tretmana u razmaku od 2-3 dana.
+        </p>
         <h2 class="lg:col-start-4 pt-4">Kako izgleda Emmett tretman?</h2>
         <p class="lg:col-start-4 text-lg">Klijenti mogu biti tretirani u sjedećem, stojećem ili ležećem položaju. Tretman se provodi izravno na koži klijenta ili preko odjeće. Pritisak na Emmett točke vrlo je nježan i klijent ne osjeća bol pri izvođenju tretmana.
         </p>
