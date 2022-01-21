@@ -46,7 +46,7 @@ const navigation = computed(() => {
           </div>
           <div class="flex items-center hidden md:flex">
             <div class="flex-shrink-0">
-              <button @click="$router.push('/kontakt')" type="button" class="relative inline-flex items-center px-4 py-2 text-sm font-medium rounded-md text-white shadow-sm hover:bg-gray-700 transition duration-500 bg-gradient-to-r from-orange-500 to-fizio-500 hover:to-rose-600">
+              <button @click="$router.push('/kontakt')" type="button" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-700 transition duration-300 bg-fizio-500 hover:bg-gray-700">
                 <PlusSmIcon class="-ml-1 mr-2 h-8 w-8" aria-hidden="true" />
                 <span class="font-medium uppercase text-xl">Naruči se</span>
               </button>
