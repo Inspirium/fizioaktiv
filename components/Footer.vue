@@ -104,7 +104,7 @@ const navigation = {
           <img class="h-16" src="~assets/img/logo.svg" alt="Company name" />
           <p class="mt-8 text-gray-500 text-xl">Zagrebačka avenija 106, 10000 Zagreb<br>
             +385 91 5133-721, +385 91 5133-721<br>
-            fizioaktiv@gmail.com</p>
+            info@fizioaktiv</p>
           <p class="text-fizio-500 uppercase text-base my-5 font-bold font-poppins">
             Povežite se s nama:
           </p>

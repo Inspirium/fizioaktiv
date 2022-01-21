@@ -46,7 +46,7 @@ const supportLinks = [
   },
   {
     type: 'Email',
-    name: 'fizioaktiv@gmail.com',
+    name: 'info@fizioaktiv',
     href: '#',
     description:
         'Pošaljite mail i mi ćemo vam se brzo javiti povratno...',

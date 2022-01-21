@@ -41,7 +41,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'ANF terapija',
         short_dec: 'ANF terapija poboljšava signalizaciju živčanog sustava izravno na staničnoj razini, smanjujući simptome kao što su bol i/ili upala i normalizirajući tjelesne funkcije',
         slug: 'anf',
-        image: '../anf.jpg',
+        image: '/anf.jpg',
       },
       {
         id: 6,
