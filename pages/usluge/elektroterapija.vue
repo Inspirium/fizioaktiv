@@ -28,18 +28,17 @@
         </p>
         <p class="lg:col-start-4 text-lg"><span class="text-fizio-500 font-semibold">ELEKTROSTIMULACIJA — </span>struja koja izaziva mišićnu kontrakciju pomoću električnih podražaja. Djeluje na mišić na način da izaziva prirodnu kontrakciju kakva se postiže fizičkom aktivnošću. Time nastojimo spriječiti atrofiju mišića.
         </p>
-
-        <h2 class="lg:col-start-4 pt-4">Može se koristiti za:</h2>
+        <p class="lg:col-start-4 font-bold text-lg">Može se koristiti za:</p>
 
         <ul class="ullist">
-          <li class="font-semibold text-lg">bržu regeneraciju mišića kod sportaša nakon treninga i napornih natjecanja, što doprinosi sportskoj izdržljivosti
+          <li class="text-lg">bržu regeneraciju mišića kod sportaša nakon treninga i napornih natjecanja, što doprinosi sportskoj izdržljivosti
           </li>
-          <li class="font-semibold text-lg">za sprečavanje atrofije, kod smanjene mišićne snage radi neaktivnosti ili kada zbog ozljede ne možemo aktivno izvoditi kontrakcije određenih mišića
+          <li class="text-lg">za sprečavanje atrofije, kod smanjene mišićne snage radi neaktivnosti ili kada zbog ozljede ne možemo aktivno izvoditi kontrakcije određenih mišića
           </li>
-          <li class="font-semibold text-lg">oblikovanje tijela – pravilnim izborom programa možemo jačati mišiće i oblikovati tijelo i utjecati na smanjenje celulita. Elektrostimulacija aktivira metabolizam i dovodi do procesa lipolize – otapanje lipocita. Tretman poboljšava cirkulaciju i oksigenaciju tkiva, što ubrzava staničnu obnovu.
+          <li class="text-lg">oblikovanje tijela – pravilnim izborom programa možemo jačati mišiće i oblikovati tijelo i utjecati na smanjenje celulita. Elektrostimulacija aktivira metabolizam i dovodi do procesa lipolize – otapanje lipocita. Tretman poboljšava cirkulaciju i oksigenaciju tkiva, što ubrzava staničnu obnovu.
           </li>
         </ul>
-        <p class="lg:col-start-4 text-lg">Općenite kontraindikacije za primjenu elektroterapije jesu akutne bolesti, upale i infektivna stanja, promjene na koži na mjestu aplikacije, trudnoća i elektrostimulator srca (pacemaker).
+        <p class="lg:col-start-4 text-lg">Općenite <span class="text-fizio-500 font-bold">kontraindikacije</span> za primjenu elektroterapije jesu akutne bolesti, upale i infektivna stanja, promjene na koži na mjestu aplikacije, trudnoća i elektrostimulator srca (pacemaker).
         </p>
 
       </div>

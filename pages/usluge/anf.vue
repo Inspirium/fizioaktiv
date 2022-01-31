@@ -14,7 +14,7 @@ import Services from '~/components/Services'
       <slot>
         <span class="hero-supertitle">ŽIVITE BEZ BOLA I UPALE</span>
         <h1 class="hero-title">
-          <span>Aminoneurofrekvencijska terapija</span>
+          <span>Amino-neuro-frekvencijska terapija</span>
         </h1>
         <p class="hero-subtitle">
           Poboljšanjem signalizacije živčanog sustava izravno na staničnoj razini, postižu se izvanredni trajni rezultati – smanjuje bol i upala u organizmu

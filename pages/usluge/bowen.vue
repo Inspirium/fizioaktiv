@@ -18,12 +18,13 @@
         <p class="lg:col-start-4 text-lg">Pokretima koji se provode u Bowen terapiji dolazi do piezoelektričnog efekta te slanja signala mozgu da nešto s tim dijelom tijela nije u redu. Mozak reagira na stimulaciju relaksacijom okolne muskulature, boljom prokrvljenošću i samim tim bržim i boljim regeneracijskim procesima.
         </p>
         <p class="lg:col-start-4 text-lg">Tretman djeluje preko fascije (fascija je tanka ovojnica koja obavija cijelo naše tijelo) te se stoga bazira na principu terapijskog djelovanja na cijelo tijelo, a ne samo na ozlijeđeni dio.</p>
-        <p class="lg:col-start-4 text-lg">Terapija je vrlo nježna i nema ograničenja na dob pacijenta. Može se koristiti na novorođenčadi kolike-grčevi), trudnicama ili na osobama starije životne dobi.
+        <h2 class="lg:col-start-4 pt-4">Kod koga se koristi Bowen tretman?</h2>
+        <p class="lg:col-start-4 text-lg">Terapija je vrlo nježna i nema ograničenja na dob pacijenta. Može se koristiti na novorođenčadi (kolike-grčevi), trudnicama ili na osobama starije životne dobi.
         </p>
         <p class="lg:col-start-4 text-lg">Preporučuje se osobama koje imaju višestruke zdravstvene probleme, na primjer bolove u leđima, loše spavanje i probleme s probavom.
         </p>
         <h2 class="lg:col-start-4 pt-4">Kako izgleda Bowen tretman?</h2>
-        <p class="lg:col-start-4 text-lg">Pri prvom tretmanu terapeut uzima anamnezu, da bi dobio što bolji uvid u zdravstveno i opće stanje  klijenta. Tretman se provodu u laganoj odjeći ili u donjem rublju. Trajanje tretman je od 30 do 45 minuta gdje terapeut radi kratke pauze kako bi klijent kvalitetnije reagirao na tretman i što bolje opustio. Tretman se ponavlja svakih 5-10 dana, najčešće jednom tjedno.
+        <p class="lg:col-start-4 text-lg">Pri prvom tretmanu terapeut uzima anamnezu, da bi dobio što bolji uvid u zdravstveno i opće stanje  klijenta. Tretman se provodu u laganoj odjeći ili u donjem rublju. Trajanje tretmana je od 30 do 45 minuta gdje terapeut radi kratke pauze kako bi klijent kvalitetnije reagirao na tretman i što bolje opustio. Tretman se ponavlja svakih 5-10 dana, najčešće jednom tjedno.
         </p>
         <p class="lg:col-start-4 text-lg">Poželjno je odraditi tretman barem tri puta zaredom, a najviše šest puta u jednom ciklusu.
         </p>

@@ -54,12 +54,12 @@ console.log(route)
         </p>
         <p class="lg:col-start-4 text-lg">Celulit nastaje kao posljedica nepravilnog načina prehrane, nedovoljnog kretanja, stresa, a može nastati i kao posljedica hormonalnog poremećaja. Osim što masaža fizički djeluje na celulit, ona povećava sposobnost kože za preuzimanje aktivnih sastojaka iz proizvoda za uklanjanje celulita.
         </p>
-        <p class="lg:col-start-4 text-lg">U FizioAktivu anticelulitnu masažu radimo u kombinaciji s aparaturnom limfnom drenažom i Vacuslim 48 metodama.
+        <p class="lg:col-start-4 text-lg">U FizioAktivu anticelulitnu masažu najčešće radimo u kombinaciji s aparaturnom limfnom drenažom i Vacuslim 48 metodama.
         </p>
       </div>
       <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
     </main>
-    <Contentlead :image="'/masaza-usluge.jpg'" :content="'Svaka masaža tijelu vrijedi kao 7-8 sati sna'"></Contentlead>
+    <Contentlead :image="'/masaza-usluge.jpg'" :content="'Svaka masaža Vašem tijelu vrijedi kao 7-8 sati sna'"></Contentlead>
     <Pricelist pricelistPart="masaze"></Pricelist>
     <Contact />
     <Services />

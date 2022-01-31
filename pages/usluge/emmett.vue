@@ -47,7 +47,7 @@
       </div>
       <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
     </main>
-    <Contentlead :image="'/emmet.jpg'" :content="'Otklanjanjem loših obrazaca pokretanja i/ili ravnoteže oslobađa se prostor za stvaranje novih, bez bola i s boljom ravnotežom'"/>
+    <Contentlead :image="'/emmet.jpg'" :content="'Otklanjanjem loših obrazaca pokretanja i/ili ravnoteže oslobađa se prostor za stvaranje novih obrazaca, bez bola i s boljom ravnotežom'"/>
     <Pricelist pricelistPart="emmett"></Pricelist>
     <Contact />
     <Services />

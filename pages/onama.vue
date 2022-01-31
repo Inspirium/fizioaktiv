@@ -16,7 +16,7 @@
         <p class="text-gray-400 text-xl sm:text-2xl mb-8 px-6">FIZIOAKTIV je osnovan krajem 2021. godine s ciljem pružanja usluga u službi zdravlja i ljepote. U njegovo nastajanje i rad uloženo je dugogodišnje iskustvo i entuzijazam našeg tima, čija je misija kroz razne programe masaža, vježbi i terapija pomoći vam    <span class="font-medium text-fizio-500">održati i unaprijediti</span>  zdravlje.</p>
       </div>
       <h2 class="font-barlow font-light uppercase text-gray-700 text-5xl sm:text-6xl text-center">Upoznajte naš tim</h2>
-      <p class="text-gray-400 text-xl sm:text-2xl px-6 mb-10 ">Godine iskustva vama
+      <p class="text-gray-400 text-xl sm:text-2xl px-6 mb-10 ">Godine iskustva
         <span class="font-medium text-fizio-500">Vama</span>
         na raspolaganju
       </p>

@@ -38,15 +38,15 @@ import {LocationMarkerIcon, MailOpenIcon, PhoneIcon} from "@heroicons/vue/outlin
 const supportLinks = [
   {
     type: 'Telefon',
-    name: '091/5122-721, 091/5122-721',
+    name: '091/5133-721, 098/634-584',
     href: '#',
     description:
-        'Nazovite nas i raspitaje se o...',
+        'Radno vrijeme: pon-sri-pet 8-16, uto-čet 12-20',
     icon: PhoneIcon,
   },
   {
     type: 'Email',
-    name: 'info@fizioaktiv',
+    name: 'info@fizioaktiv.hr',
     href: '#',
     description:
         'Pošaljite mail i mi ćemo vam se brzo javiti povratno...',
@@ -57,7 +57,7 @@ const supportLinks = [
     name: 'Zagrebačka avenija 106, 10000 Zagreb',
     href: '#',
     description:
-        '(zgrada pored Konzuma)',
+        'Parkirajte se pored Konzuma u Španskom, ili Nova galerija, etaža -1',
     icon: LocationMarkerIcon,
   },
 ]

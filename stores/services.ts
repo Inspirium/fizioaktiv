@@ -97,21 +97,22 @@ export const servicesList = defineStore('serviceList', {
     cjenik: {
       masaze: [
         {
-          name: 'Sportske masaže',
-          items: [
-            { name: 'Sportska masaža 30 min', price: '160 kn' },
-            { name: 'Sportska masaža 45 min', price: '250 kn' },
-          ],
-        },
-        {
           name: 'Medicinske masaže',
           items: [
             { name: 'Medicinska masaža-ciljana 15 min', price: '80 kn' },
             { name: 'Medicinska masaža 30 min', price: '130 kn' },
-            { name: 'Medicinska masaža 45 min', price: '200 kn' },
-            { name: 'Medicinska masaža 60 min', price: '250 kn' },
-            { name: 'Medicinska masaža s Emmett tehnikom 30 min', price: '180 kn' },
-            { name: 'Medicinska masaža s Emmett tehnikom 60 min', price: '300 kn' },
+            { name: 'Medicinska masaža 45 min', price: '180 kn' },
+            { name: 'Medicinska masaža 60 min', price: '230 kn' },
+            { name: 'Anticelulitna masaža 30 min', price: '130 kn' },
+            { name: 'Medicinska masaža 30 min s Emmett tehnikom', price: '200 kn' },
+            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '300 kn' },
+          ],
+        },
+        {
+          name: 'Sportske masaže',
+          items: [
+            { name: 'Sportska masaža 30 min', price: '160 kn' },
+            { name: 'Sportska masaža 45 min', price: '230 kn' },
           ],
         },
         {
@@ -119,7 +120,7 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'Medicinska masaža 30 min — 5 tretmana', price: '500 kn' },
           ],
-        },
+        }
       ],
       vjezbe: [
         {
@@ -143,11 +144,11 @@ export const servicesList = defineStore('serviceList', {
       ],
       emmett: [
         {
-          name: 'Emmett terapija',
+          name: 'Emmett tehnika',
           items: [
-            { name: 'Emmett terapija', price: '150 kn' },
-            { name: 'Medicinska masaža s Emmett tehnikom 30 min', price: '180 kn' },
-            { name: 'Medicinska masaža s Emmett tehnikom 60 min', price: '300 kn' },
+            { name: 'Emmett tehnika', price: '150 kn' },
+            { name: 'Medicinska masaža 30 min s Emmett tehnikom', price: '200 kn' },
+            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '300 kn' },
           ],
         },
       ],
@@ -163,11 +164,17 @@ export const servicesList = defineStore('serviceList', {
       ],
       elektroterapija: [
         {
-          name: 'Elektro-terapija',
+          name: 'Elektroterapija',
           items: [
             { name: 'Elektroterapija - 20 min', price: '40 kn' },
             { name: 'Elektrostimulacija - 20 min', price: '50 kn' },
-            { name: 'Elektrostimulacija - 20 min', price: '60 kn' },
+            { name: 'Elektrostimulacija - 30 min', price: '60 kn' },
+          ],
+        },
+        {
+          name: 'Elektroterapija paketi',
+          items: [
+            { name: 'UZV i elektroterapija - 10 tretmana', price: '750 kn' },
           ],
         }
       ],
@@ -177,32 +184,65 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'UZV 10 min', price: '50 kn' },
           ],
+        },
+        {
+          name: 'Elektroterapija paketi',
+          items: [
+            { name: 'UZV i elektroterapija - 10 tretmana', price: '750 kn' },
+          ],
         }
       ],
       vacuslim: [
         {
           name: 'VacuSlim 48',
           items: [
-            { name: 'Oblikovanje tijela - Vacuslim 48', price: '150 kn' },
-            { name: 'Vacuslim 48 i anticelulitna masaža - 60 min', price: '250 kn' },
-            { name: 'Vacuslim 48 i aparaturna limfna drenaža', price: '220 kn' },
+            { name: 'Oblikovanje tijela - Vacuslim 48', price: '200 kn' },
+
           ],
         },
+        {
+          name: 'VacuSlim 48 paketi',
+          items: [
+            { name: 'Vacuslim 48 i anticelulitna masaža - 60 min - 10 tretmana', price: '2500 kn' },
+            { name: 'Vacuslim 48 u kombinaciji s elektrostimulacijom i limfnom drenažom - 60 min - 10 tretmana', price: '2300 kn' },
+          ],
+        }
       ],
       bautyexpert: [
         {
           name: 'Beauty Expert 4 u 1',
           items: [
             { name: 'Beauty Expert 4 u 1', price: '150 kn' },
-            { name: 'Aparaturna limfna drenaža-30 min', price: '100 kn' },
+            { name: 'Aparaturna limfna drenaža - 30 min', price: '100 kn' },
           ],
         },
+        {
+          name: 'Beauty Expert 4 u 1 paketi',
+          items: [
+            { name: 'Beauty Expert 4 u 1 program mršavljenja - 45-60min - 10 tretmana', price: '1200 kn' },
+          ],
+        }
       ],
       anticelulitna: [
         {
           name: 'Anticelulitna masaža',
           items: [
-            { name: 'Anticelulitna masaža', price: '200 kn' },
+            { name: 'Anticelulitna masaža - 30 min', price: '130 kn' },
+          ],
+        },
+        {
+          name: 'Anticelulitna masaža paketi',
+          items: [
+            { name: 'Anticelulitna masaža - 10 tretmana', price: '1000 kn' },
+          ],
+        }
+
+      ],
+      limfna: [
+        {
+          name: 'Limfna drenaža',
+          items: [
+            { name: 'Aparaturna limfna drenaža - 30 min', price: '100 kn' },
           ],
         },
       ],

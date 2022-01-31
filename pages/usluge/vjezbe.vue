@@ -15,7 +15,7 @@
       <div class="grid lg:grid-cols-[2rem_auto_250px_800px_250px_auto_2rem] mx-auto text-left text-gray-600 font-open space-y-5 px-6">
         <p class="lead">Kao što sama riječ govori, individualno vježbanje podrazumijeva vježbanje jedan na jedan s fizioterapeutom. Individualno možete vježbati iz raznih razloga: oporavak nakon ozljede, priprema za operativni zahvat, problemi s kralježnicom, problemi s koljenima, bolna ramena, degenerativne bolesti i ostala slična stanja.
         </p>
-        <p class="lg:col-start-4 text-lg">S obzirom na to da danas prevladava sjedilački način života, on može dovesti do raznih problema. Dugotrajno sjedenje skraćuje mišiće i ligamente, a posljedice su narušena postura, bolovi u tijelu – najčešće križobolja i bolovi u vratu – ograničeni pokret, napetost i slično.</p>
+        <p class="lg:col-start-4 text-lg">S obzirom na to da danas prevladava sjedilački način života, on može dovesti do raznih problema. Dugotrajno sjedenje skraćuje mišiće i ligamente, a posljedice su narušena postura, bolovi u tijelu (najčešće križobolja i bolovi u vratu) ograničeni pokret, napetost i slično.</p>
         <p class="lg:col-start-4 text-lg">Ovisno o stanju i potrebama klijenta, individualne vježbe u FizioAktivu primjenjujemo same ili u kombinaciji s ostalim metodama fizikalnih procedura – ultrazvukom i elektroterapijskim strujama te EMMETT tehnikom.
       </p>
       </div>

@@ -73,8 +73,8 @@ const navigation = {
         <div class="xl:grid-col-1">
           <img class="h-16" src="~assets/img/logo.svg" alt="Company name" />
           <p class="mt-8 text-gray-500 text-xl">Zagrebačka avenija 106, 10000 Zagreb<br>
-            +385 91 5133-721, +385 91 5133-721<br>
-            info@fizioaktiv</p>
+            091/5133-721, 098/634-584<br>
+            info@fizioaktiv.hr</p>
           <p class="text-fizio-500 uppercase text-base my-5 font-bold font-poppins">
             Povežite se s nama:
           </p>
@@ -128,7 +128,7 @@ const navigation = {
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
         <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2022. Fizioaktiv, Obrt za zdravlje i njegu tijela
+          &copy; 2022. FizioAktiv, Obrt za zdravlje i njegu tijela
         </p>
       </div>
     </div>

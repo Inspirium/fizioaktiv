@@ -17,14 +17,14 @@
         </p>
         <p class="lg:col-start-4 text-lg">Tretman je bezbolan i siguran, a klijent može osjetiti blagu toplinu na koži.
         </p>
-        <p class="lg:col-start-4 text-lg">Indikacije za primjenu terapije ultrazvukom uključuju akutne ozljede tetiva, mišića i ligamenata, ožiljke, burzitis, periartritis zglobova, mialgije, miogeloze, kontrakture, artroze, diskopatije i ostala bolna stanja.
+        <p class="lg:col-start-4 text-lg"><span class="text-fizio-500 font-bold">Indikacije</span> za primjenu terapije ultrazvukom uključuju akutne ozljede tetiva, mišića i ligamenata, ožiljke, burzitis, periartritis zglobova, mialgije, miogeloze, kontrakture, artroze, diskopatije i ostala bolna stanja.
         </p>
-        <p class="lg:col-start-4 text-lg">Kontraindikacije za primjenu terapije ultrazvukom jesu akutne i kronične infekcije, maligna stanja, tromboza, teža srčana oboljenja, pacemaker i slično.
+        <p class="lg:col-start-4 text-lg"><span class="text-fizio-500 font-bold">Kontraindikacije</span> za primjenu terapije ultrazvukom jesu akutne i kronične infekcije, maligna stanja, tromboza, teža srčana oboljenja, pacemaker i slično.
         </p>
       </div>
       <a href="/kontakt" class="inline-block px-8 mt-8 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600">Rezerviraj termin!</a>
     </main>
-    <Contentlead :image="'/ultrazvuk.jpg'" :content="'Zvučnim valovima koje ljudsko uho ne može čuti terapijski ultrazvuk međudjeluje s tkivom zagrijavajući ga'" />
+    <Contentlead :image="'/ultrazvuk.jpg'" :content="'Terapijski ultrazvuk međudjeluje s tkivom zagrijavajući ga'" />
     <Pricelist pricelistPart="uzvterapija"></Pricelist>
     <Contact />
     <Services />

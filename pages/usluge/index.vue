@@ -3,10 +3,10 @@
     <Hero :image="'usluge.jpg'">
       <slot>
         <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins text-5xl lg:text-6xl">
-          Zdravlje<span class="text-fizio-500">&Ljepota</span>
+          Zdravlje<span class="text-fizio-500"> & Ljepota</span>
         </h1>
         <p class="mt-3 text-xl text-gray-600 sm:mt-5 text-[1.5rem] sm:text-3xl uppercase">
-          Sve za vaše tijelo i um
+          Za vaše tijelo i um
         </p>
       </slot>
     </Hero>
