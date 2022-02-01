@@ -79,10 +79,10 @@ const navigation = {
             Povežite se s nama:
           </p>
           <div class="flex space-x-6">
-            <NuxtLink v-for="item in navigation.social" :key="item.name" :to="item.href" class="text-gray-400 hover:text-gray-500">
+            <a v-for="item in navigation.social" :key="item.name" :to="item.href" class="text-gray-400 hover:text-gray-500">
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-10 w-10" aria-hidden="true" />
-            </NuxtLink>
+            </a>
           </div>
         </div>
         <div class="mt-12 md:mt-0 md:grid-col-2">
