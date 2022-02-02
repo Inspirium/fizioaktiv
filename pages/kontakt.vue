@@ -124,18 +124,18 @@ function handleSubmit() {
           </button>
         </form>
       </div>
-      <div v-else-if="errorr" class="">
-        <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
-          <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 mb-10" src="/komadi_okrugla.jpg" alt="" />
+<!--      <div v-if="errorr" class="">-->
+<!--        <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">-->
+<!--          <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 mb-10" src="/komadi_okrugla.jpg" alt="" />-->
 
-          <h2 class="font-barlow font-light uppercase text-gray-700 text-5xl sm:text-6xl mb-4 text-center">Došlo je do greške</h2>
-          <p class="text-gray-400 text-2xl mb-8">
-            Pokušajte <span class="font-medium text-fizio-500">najkraćem mogućem</span> roku
-          </p>
-        </div>
+<!--          <h2 class="font-barlow font-light uppercase text-gray-700 text-5xl sm:text-6xl mb-4 text-center">Došlo je do greške</h2>-->
+<!--          <p class="text-gray-400 text-2xl mb-8">-->
+<!--            Pokušajte <span class="font-medium text-fizio-500">najkraćem mogućem</span> roku-->
+<!--          </p>-->
+<!--        </div>-->
 
-      </div>
-      <div v-else class="">
+<!--      </div>-->
+      <div v-if="thankyou" class="">
         <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
           <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 mb-10" src="/komadi_okrugla.jpg" alt="" />
 
