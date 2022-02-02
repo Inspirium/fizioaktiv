@@ -34,7 +34,7 @@ const people = ref([
     name: 'Josipa Ćosić',
     role: 'Baccalaureus fizioterapije',
     imageUrl:
-        '/josipa.png',
+        '/josipa.jpg',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -42,7 +42,7 @@ const people = ref([
     name: 'Ana Kovačević Drmić',
     role: 'Baccalaureus fizioterapije',
     imageUrl:
-        '/ana.png',
+        '/ana.jpg',
     twitterUrl: '#',
     linkedinUrl: '#',
   }
