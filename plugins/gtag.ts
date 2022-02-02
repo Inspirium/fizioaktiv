@@ -1,10 +1,10 @@
-import { useGtag, useState } from "vue-gtag-next";
+import { defineNuxtPlugin } from '#app'
+import VueGtag from "vue-gtag-next";
 
 export default defineNuxtPlugin((nuxtApp ) => {
-    const { property } = useState();
-    const addDomain = () => {
-        property.value = {
+    nuxtApp.vueApp.use(VueGtag, {
+        property: {
             id: "G-4XGGTXLTB4",
-        };
-    };
+        }
+    })
 })
