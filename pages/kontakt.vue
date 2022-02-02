@@ -32,8 +32,8 @@ function handleSubmit() {
     method: 'POST',
     body: form.value,
   })
-    .then(() => thankyou = true)
-    .catch(e => errorr = true)
+    .then(() => thankyou.value = true)
+    .catch(e => errorr.value = true)
 }
 
 </script>
