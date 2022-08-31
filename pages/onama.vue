@@ -37,7 +37,7 @@
               <NuxtLink to="/usluge/anf" class="font-semibold text-lg">ANF Academy – Pain Therapist</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/usluge/emmett" class="font-semibold text-lg">Emmet tehnika Modul 1 i 2.</NuxtLink>
+              <NuxtLink to="/usluge/emmett" class="font-semibold text-lg">Emmett terapija</NuxtLink>
             </li>
           </ul>
           <p class="mt-5 font-open text-left text-lg text-gray-700 leading-8">Smatra da potreba za obrazovanjem i usavršavanjem nikada ne završava te planira i daljnju edukaciju i proširivanje svojih znanja i horizonata.
