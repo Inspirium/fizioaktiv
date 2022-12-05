@@ -124,7 +124,9 @@ function handleSubmit() {
           </button>
         </form>
       </div>
-<!--      <div v-if="errorr" class="">-->
+    </transition>
+
+    <!--      <div v-if="errorr" class="">-->
 <!--        <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">-->
 <!--          <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 mb-10" src="/komadi_okrugla.jpg" alt="" />-->
 
@@ -146,7 +148,6 @@ function handleSubmit() {
         </div>
 
       </div>
-    </transition>
     <Contact />
     <iframe class="w-full aspect-video" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1390.8500307999261!2d15.894702766910317!3d45.79723640789946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d142af7bb635%3A0xa428577856383472!2sGyms4you%20Zagreb%20(Nova%20Galerija)!5e0!3m2!1sen!2shr!4v1642581500243!5m2!1sen!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" />
   </div>

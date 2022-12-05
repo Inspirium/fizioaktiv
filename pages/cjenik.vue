@@ -38,7 +38,8 @@ const sitedata = servicesList()
 
     <div class="max-w-2xl mx-auto bg-white sm:py-8 sm:px-6 lg:max-w-7xl">
       <h2 class="font-barlow font-light uppercase text-gray-700 text-6xl mb-4 px-4 text-center">Usluge</h2>
-      <p class="text-gray-400 text-2xl mb-8 px-4">Za umirovljenike odobravamo <span class="font-medium text-fizio-500">10% popusta</span> na sve cijene usluga</p>
+      <p class="text-gray-400 text-2xl mb-4 px-4">Za umirovljenike odobravamo <span class="font-medium text-fizio-500">10% popusta</span> na sve cijene usluga</p>
+      <p class="text-gray-400 text-xl mb-6 px-4">Tečaj: 1 EUR = 7,53450 HRK</p>
       <div class="">
         <div class="table-fixed m-auto sm:w-1/2">
           <div class="border-t border-gray-200 divide-y divide-gray-200">
