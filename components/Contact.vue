@@ -41,7 +41,7 @@ const supportLinks = [
     name: '091/5133-721, 098/634-584',
     href: '#',
     description:
-        'Radno vrijeme: pon-sri-pet 8-16, uto-čet 12-20',
+        'Radno vrijeme: pon-pet 8-20 (po dogovoru)',
     icon: PhoneIcon,
   },
   {
