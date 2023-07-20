@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import { defineProps, computed } from 'vue'
+import { computed, defineProps } from 'vue'
 
-const props = defineProps( {
+const props = defineProps({
   image: {
     type: String,
     required: false,
     default: 'cjenik.jpg',
-  }
+  },
 })
 
 const heroImage = computed(() => {
   return `background-image: url("${props.image}");`
 })
-
 
 </script>
 
@@ -23,7 +22,7 @@ const heroImage = computed(() => {
         <div class="hero-container">
           <div class="hero-box">
             <div class="hero-box-inner">
-              <slot></slot>
+              <slot />
             </div>
           </div>
         </div>

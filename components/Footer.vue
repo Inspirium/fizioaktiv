@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import {computed, defineComponent, h} from 'vue'
-import { LocationMarkerIcon, MailOpenIcon, PhoneIcon } from "@heroicons/vue/outline";
+import { computed, defineComponent, h } from 'vue'
+import { LocationMarkerIcon, MailOpenIcon, PhoneIcon } from '@heroicons/vue/outline'
 
-import { servicesList } from '/stores/services'
+import { servicesList } from '~/stores/services'
 const sitedata = servicesList()
 
 const navigation = {
@@ -23,14 +23,14 @@ const navigation = {
       href: 'https://www.facebook.com/FizioAktivZagreb',
       icon: defineComponent({
         render: () =>
-            h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
-              h('path', {
-                'fill-rule': 'evenodd',
-                d:
+          h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
+            h('path', {
+              'fill-rule': 'evenodd',
+              'd':
                     'M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z',
-                'clip-rule': 'evenodd',
-              }),
-            ]),
+              'clip-rule': 'evenodd',
+            }),
+          ]),
       }),
     },
     // {
@@ -67,14 +67,18 @@ const navigation = {
 
 <template>
   <footer class="bg-gray-100 text-left" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <h2 id="footer-heading" class="sr-only">
+      Footer
+    </h2>
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="md:flex md:justify-between">
         <div class="xl:grid-col-1">
-          <img class="h-16" src="~assets/img/logo.svg" alt="Company name" />
-          <p class="mt-8 text-gray-500 text-xl">Zagrebačka avenija 106, 10000 Zagreb<br>
+          <img class="h-16" src="~assets/img/logo.svg" alt="Company name">
+          <p class="mt-8 text-gray-500 text-xl">
+            Zagrebačka avenija 106, 10000 Zagreb<br>
             091/5133-721, 098/634-584<br>
-            info@fizioaktiv.hr</p>
+            info@fizioaktiv.hr
+          </p>
           <p class="text-fizio-500 uppercase text-base my-5 font-bold font-poppins">
             Povežite se s nama:
           </p>

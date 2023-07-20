@@ -128,7 +128,7 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'Medicinska masaža 30 min — 5 tretmana', price: '80€ / 602.76kn' },
           ],
-        }
+        },
       ],
       vjezbe: [
         {
@@ -184,7 +184,7 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'UZV i elektroterapija - 10 tretmana', price: '114€ / 858.93kn' },
           ],
-        }
+        },
       ],
       uzvterapija: [
         {
@@ -198,7 +198,7 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'UZV i elektroterapija - 10 tretmana', price: '114€ / 858.93kn' },
           ],
-        }
+        },
       ],
       dryneedling: [
         {
@@ -222,7 +222,7 @@ export const servicesList = defineStore('serviceList', {
             { name: 'Vacuslim 48 i anticelulitna masaža - 60 min - 10 tretmana', price: '380€ / 2863.11kn' },
             { name: 'Vacuslim 48 u kombinaciji s elektrostimulacijom i limfnom drenažom - 60 min - 10 tretmana', price: '335€ / 2524.06kn' },
           ],
-        }
+        },
       ],
       bautyexpert: [
         {
@@ -237,7 +237,7 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'Beauty Expert 4 u 1 program mršavljenja - 45-60min - 10 tretmana', price: '160€ / 1205.52kn' },
           ],
-        }
+        },
       ],
       anticelulitna: [
         {
@@ -251,7 +251,7 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'Anticelulitna masaža - 10 tretmana', price: '160€ / 1205.52kn' },
           ],
-        }
+        },
 
       ],
       limfna: [
@@ -264,12 +264,4 @@ export const servicesList = defineStore('serviceList', {
       ],
     },
   }),
-  getters: {
-
-  },
-  actions: {
-    addNew(task) {
-      this.tasks.unshift(task)
-    },
-  },
 })
