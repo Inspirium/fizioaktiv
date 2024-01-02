@@ -77,14 +77,14 @@ export const servicesList = defineStore('serviceList', {
         slug: 'vacuslim',
         image: '/anticelulitna_masaza1.jpg',
       },
-      {
-        id: 2,
-        href: '#',
-        title: 'Oblikovanje tijela - Beauty Expert 4 u 1',
-        short_dec: 'U jednom uređaju udružene su tehnologije elektrostimulacije, infracrvene terapije, limfne drenaže i magnetne terapije, omogućujući razgradnju masnih stanica i celulita te izlučivanje toksina',
-        slug: 'bautyexpert',
-        image: '/vacuslim.jpg',
-      },
+      // {
+      //   id: 2,
+      //   href: '#',
+      //   title: 'Oblikovanje tijela - Beauty Expert 4 u 1',
+      //   short_dec: 'U jednom uređaju udružene su tehnologije elektrostimulacije, infracrvene terapije, limfne drenaže i magnetne terapije, omogućujući razgradnju masnih stanica i celulita te izlučivanje toksina',
+      //   slug: 'bautyexpert',
+      //   image: '/vacuslim.jpg',
+      // },
       {
         id: 3,
         href: '#',
@@ -157,7 +157,7 @@ export const servicesList = defineStore('serviceList', {
           items: [
             { name: 'Emmett tehnika', price: '20€' },
             { name: 'Medicinska masaža 30 min s Emmett tehnikom', price: '30€' },
-            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '40€' },
+            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '43€' },
           ],
         },
       ],
