@@ -165,7 +165,7 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'ANF terapija',
           items: [
-            { name: 'ANF terapija - pregled ', price: '30€' },
+            { name: 'ANF terapija - prvi pregled ', price: '30€' },
             { name: 'ANF terapija - DISK', price: '5€' },
           ],
         },
