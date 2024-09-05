@@ -107,26 +107,26 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Medicinske masaže',
           items: [
-            { name: 'Medicinska masaža-ciljana 15 min', price: '13€' },
-            { name: 'Medicinska masaža 30 min', price: '20€' },
-            { name: 'Medicinska masaža 45 min', price: '27€' },
-            { name: 'Medicinska masaža 60 min', price: '33€' },
-            { name: 'Anticelulitna masaža 30 min', price: '20€' },
-            { name: 'Medicinska masaža 30 min s Emmett tehnikom', price: '30€' },
-            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '43€' },
+            { name: 'Medicinska masaža-ciljana 15 min', price: '15€' },
+            { name: 'Medicinska masaža 30 min', price: '25€' },
+            { name: 'Medicinska masaža 45 min', price: '35€' },
+            { name: 'Medicinska masaža 60 min', price: '40€' },
+            { name: 'Anticelulitna masaža 30 min', price: '25€' },
+            { name: 'Medicinska masaža 30 min s Emmett tehnikom', price: '40€' },
+            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '55€' },
           ],
         },
         {
           name: 'Sportske masaže',
           items: [
-            { name: 'Sportska masaža 30 min', price: '24€' },
-            { name: 'Sportska masaža 45 min', price: '35€' },
+            { name: 'Sportska masaža 30 min', price: '30€' },
+            { name: 'Sportska masaža 45 min', price: '40€' },
           ],
         },
         {
           name: 'Medicinske masaže paketi',
           items: [
-            { name: 'Medicinska masaža 30 min — 5 tretmana', price: '80€' },
+            { name: 'Medicinska masaža 30 min — 5 tretmana', price: '100€' },
           ],
         },
       ],
@@ -134,9 +134,8 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Vježbe',
           items: [
-            { name: 'Individualne vježbe 30 min', price: '14€' },
-            { name: 'Individualne vježbe 45 min', price: '20€' },
-            { name: 'Individualne vježbe 60 min', price: '27€' },
+            { name: 'Individualne vježbe 30 min', price: '20€' },
+            { name: 'Individualne vježbe 45 min', price: '30€' },
           ],
         },
       ],
@@ -144,10 +143,10 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Bowen terapija',
           items: [
-            { name: 'Bowen terapija', price: '30€' },
-            { name: 'Bowen terapija s Emmett tehnikom', price: '36€' },
-            { name: 'Bowen terapija s Emmett tehnikom - djeca', price: '20€' },
-            { name: 'Bowen terapija s Emmett tehnikom - bebe (kolike)', price: '14€' },
+            { name: 'Bowen terapija', price: '35€' },
+            { name: 'Bowen terapija s Emmett tehnikom', price: '40€' },
+            { name: 'Bowen terapija s Emmett tehnikom - djeca', price: '25€' },
+            { name: 'Bowen terapija s Emmett tehnikom - bebe (kolike)', price: '15€' },
           ],
         },
       ],
@@ -155,9 +154,9 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Emmett tehnika',
           items: [
-            { name: 'Emmett tehnika', price: '20€' },
-            { name: 'Medicinska masaža 30 min s Emmett tehnikom', price: '30€' },
-            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '43€' },
+            { name: 'Emmett tehnika', price: '30€' },
+            { name: 'Medicinska masaža 30 min s Emmett tehnikom', price: '40€' },
+            { name: 'Medicinska masaža 60 min s Emmett tehnikom', price: '55€' },
           ],
         },
       ],
@@ -174,15 +173,15 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Elektroterapija',
           items: [
-            { name: 'Elektroterapija - 20 min', price: '7€' },
-            { name: 'Elektrostimulacija - 20 min', price: '7€' },
-            { name: 'Elektrostimulacija - 30 min', price: '10€' },
+            { name: 'Elektroterapija - 20 min', price: '10€' },
+            { name: 'Elektrostimulacija - 20 min', price: '10€' },
+            { name: 'Elektrostimulacija - 30 min', price: '15€' },
           ],
         },
         {
           name: 'Elektroterapija paketi',
           items: [
-            { name: 'UZV i elektroterapija - 10 tretmana', price: '114€' },
+            { name: 'UZV i elektroterapija - 10 tretmana', price: '180€' },
           ],
         },
       ],
@@ -190,13 +189,13 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'UZV terapija',
           items: [
-            { name: 'UZV 10 min', price: '7€' },
+            { name: 'UZV 10 min', price: '10€' },
           ],
         },
         {
           name: 'Elektroterapija paketi',
           items: [
-            { name: 'UZV i elektroterapija - 10 tretmana', price: '114€' },
+            { name: 'UZV i elektroterapija - 10 tretmana', price: '180€' },
           ],
         },
       ],
@@ -204,7 +203,7 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Dry needling',
           items: [
-            { name: 'Dry needling', price: '20€' },
+            { name: 'Dry needling', price: '30€' },
           ],
         },
       ],
@@ -219,8 +218,8 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'VacuSlim 48 paketi',
           items: [
-            { name: 'Vacuslim 48 i anticelulitna masaža - 60 min - 10 tretmana', price: '400€' },
-            { name: 'Vacuslim 48 u kombinaciji s elektrostimulacijom i limfnom drenažom - 60 min - 10 tretmana', price: '350€' },
+            { name: 'Vacuslim 48 i anticelulitna masaža - 60 min - 10 tretmana', price: '450€' },
+            { name: 'Vacuslim 48 u kombinaciji s elektrostimulacijom i limfnom drenažom - 60 min - 10 tretmana', price: '400€' },
           ],
         },
       ],
@@ -229,13 +228,13 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Anticelulitna masaža',
           items: [
-            { name: 'Anticelulitna masaža - 30 min', price: '20€' },
+            { name: 'Anticelulitna masaža - 30 min', price: '25€' },
           ],
         },
         {
           name: 'Anticelulitna masaža paketi',
           items: [
-            { name: 'Anticelulitna masaža - 10 tretmana', price: '160€' },
+            { name: 'Anticelulitna masaža - 10 tretmana', price: '225€' },
           ],
         },
 
@@ -244,7 +243,7 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'Limfna drenaža',
           items: [
-            { name: 'Aparaturna limfna drenaža - 30 min', price: '15€' },
+            { name: 'Aparaturna limfna drenaža - 30 min', price: '20€' },
           ],
         },
       ],
