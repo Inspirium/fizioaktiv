@@ -149,6 +149,6 @@ function handleSubmit() {
 
       </div>
     <Contact />
-    <iframe class="w-full aspect-video" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1390.8500307999261!2d15.894702766910317!3d45.79723640789946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d142af7bb635%3A0xa428577856383472!2sGyms4you%20Zagreb%20(Nova%20Galerija)!5e0!3m2!1sen!2shr!4v1642581500243!5m2!1sen!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" />
+    <iframe class="w-full aspect-video" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1390.84280847488!2d15.894357339186469!3d45.79752576279661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d19a6abd51cf%3A0x8c00dc302cc9bec8!2sFizioaktiv!5e0!3m2!1sen!2shr!4v1704193650896!5m2!1sen!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </template>
