@@ -2,9 +2,6 @@
 
 import { servicesList } from "~/stores/services";
 import Hero from '~/components/Hero'
-import Test from '~/components/Test'
-import Zdravlje from '~/components/Zdravlje'
-import Ljepota from '~/components/Services.vue'
 import Tim from '~/components/Tim'
 
 const sitedata = servicesList()

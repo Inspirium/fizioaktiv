@@ -2,10 +2,6 @@
 import { ref } from 'vue'
 import { servicesList } from '~/stores/services'
 import Hero from '~/components/Hero'
-import Test from '~/components/Test'
-import Zdravlje from '~/components/Zdravlje'
-import Ljepota from '~/components/Services.vue'
-import Tim from '~/components/Tim'
 import Contact from '~/components/Contact'
 
 const sitedata = servicesList()

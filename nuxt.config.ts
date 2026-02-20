@@ -15,20 +15,16 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     'nuxt-og-image',
+    '@nuxtjs/seo',
   ],
   css: ['~/styles/main.css'],
-  extends: [
-    'nuxt-seo-kit',
-  ],
-  runtimeConfig: {
-    public: {
-      siteName: 'FizioAktiv',
-      siteDescription: 'Dugogodišnje iskustvo i entuzijazam našeg tima, čija je misija kroz razne programe masaža, vježbi i terapija pomoći vam održati i unaprijediti zdravlje',
-      titleSeparator: '|',
-      siteUrl: 'https://www.fizioaktiv.hr',
-      language: 'hr',
-      siteImage: '/fizioaktiv_profile.jpg',
-    },
+  site: {
+    name: 'FizioAktiv',
+    description: 'Dugogodišnje iskustvo i entuzijazam našeg tima, čija je misija kroz razne programe masaža, vježbi i terapija pomoći vam održati i unaprijediti zdravlje',
+    titleSeparator: '|',
+    url: 'https://www.fizioaktiv.hr',
+    defaultLocale: 'hr',
+    image: '/fizioaktiv_profile.jpg',
   },
   googleFonts: {
     families: {
@@ -38,4 +34,10 @@ export default defineNuxtConfig({
     },
     display: 'swap',
   },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+    },
+  },
+  compatibilityDate: '2026-02-20'
 })
