@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { computed, defineProps } from 'vue'
-
 const props = defineProps({
   image: {
     type: String,
     required: false,
-    default: 'cjenik.jpg',
+    default: '/fizioaktiv.jpg',
   },
 })
 

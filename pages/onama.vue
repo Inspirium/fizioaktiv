@@ -22,7 +22,7 @@
       </p>
       <div class="flex flex-col sm:flex-row sm:space-x-12 px-4">
         <div class="flex-1">
-          <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/josipa.jpg" alt="" />
+          <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/josipa.jpg" alt="Josipa Ćosić" />
           <h2 class="mt-6 text-fizio-500">Josipa Ćosić</h2>
           <p class="text-lg uppercase -mt-1">Baccalaureus fizioterapije</p>
           <p class="text-lg mt-1">ANF Pain terapeut, Dry needling</p>
@@ -44,7 +44,7 @@
           </p>
         </div>
         <div class="flex-1">
-          <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/ana.jpg" alt="" />
+          <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/ana.jpg" alt="Ana Kovačević Drmić" />
           <h2 class="mt-6 text-fizio-500">Ana Kovačević Drmić</h2>
           <p class="text-lg uppercase -mt-1">Baccalaureus fizioterapije</p>
           <p class="text-lg mt-1">Bowen terapeut, Emmett terapeut, ANF Pain terapeut</p>
@@ -71,9 +71,9 @@
 </template>
 
 <script setup lang="ts">
-import { servicesList } from "~/stores/services";
-import Hero from '~/components/Hero'
-
-const sitedata = servicesList()
-
+usePageSeo({
+  title: 'O nama – naš tim fizioterapeuta',
+  description: 'Upoznajte Josipu Ćosić i Anu Kovačević Drmić, prvostupnice fizioterapije s dugogodišnjim iskustvom u fizikalnoj medicini i rehabilitaciji.',
+  image: '/komadi-light.jpg',
+})
 </script>

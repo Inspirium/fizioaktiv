@@ -1,9 +1,12 @@
 <template>
-  <div>
-    <main class="text-center font-barlow">
-      <Header />
+  <div class="text-center font-barlow">
+    <Header />
+    <main>
       <slot />
-      <Footer />
     </main>
+    <Footer />
+    <ClientOnly>
+      <CookieBanner />
+    </ClientOnly>
   </div>
 </template>

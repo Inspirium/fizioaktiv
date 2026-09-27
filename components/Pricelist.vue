@@ -10,20 +10,13 @@
     <div class="">
       <div class="table-fixed m-auto lg:w-1/2">
         <div class="border-t border-gray-200 divide-y divide-gray-200">
-          <template v-for="section in sitedata.cjenik[part]" :key="section.name">
+          <template v-for="section in sections" :key="section.name">
             <div>
               <div class="py-3 pl-6 bg-gray-50 text-xl font-bold text-gray-900 text-left font-poppins">
                 {{ section.name }}
               </div>
             </div>
-            <div v-for="feature in section.items" :key="feature.name" class="flex justify-center ">
-              <div class="py-5 pl-6 pr-6 text-xl font-normal text-gray-500 text-left w-full">
-                {{ feature.name }}
-              </div>
-              <div class="py-5 w-1/2 pr-6 text-right">
-                <span class="block text-xl font-medium text-fizio-500">{{ feature.price }}</span>
-              </div>
-            </div>
+            <CjenikRed v-for="item in section.items" :key="item.name" :item="item" />
           </template>
         </div>
       </div>
@@ -35,19 +28,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, ref } from 'vue'
-
-import { servicesList } from '~/stores/services'
+import type { PropType } from 'vue'
+import { type CjenikDio, cjenik } from '~/data/cjenik'
 
 const props = defineProps({
   pricelistPart: {
-    type: String,
-    required: false,
-    default: '',
+    type: String as PropType<CjenikDio>,
+    required: true,
   },
 })
-const sitedata = servicesList()
 
-const part = props.pricelistPart
-
+const sections = computed(() => cjenik[props.pricelistPart] ?? [])
 </script>

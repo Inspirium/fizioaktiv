@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useServiceSeo('elektroterapija', 'Elektroterapija')
+</script>
+
 <template>
   <div class="">
     <Hero :image="'/elektrostimulacija.jpg'">
@@ -10,7 +14,7 @@
         </p>
       </slot>
     </Hero>
-    <main>
+    <div>
       <div class="grid lg:grid-cols-[2rem_auto_250px_800px_250px_auto_2rem] mx-auto text-left text-gray-600 font-open space-y-5 px-6">
         <p class="lead">Dijeli se prema frekvenciji struje koju koristimo.
         </p>
@@ -42,8 +46,8 @@
         </p>
 
       </div>
-      <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
-    </main>
+      <NuxtLink to="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</NuxtLink>
+    </div>
     <Contentlead :image="'/elektrostimulacija.jpg'" :content="'Dobrobiti struje bili su svjesni već stari grci, koji su električnim ribama tretirali glavobolje i druga bolna stanja'"/>
     <Pricelist pricelistPart="elektroterapija"></Pricelist>
     <Contact />
@@ -52,12 +56,4 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref, defineProps, watch, defineComponent, h } from 'vue'
-import Hero from '~/components/Hero'
-import Contact from '~/components/Contact'
-import Contentlead from '~/components/Contentlead'
-import Tim from '~/components/Tim'
-import Pricelist from '~/components/Pricelist'
-import Services from '~/components/Services'
-</script>
+
