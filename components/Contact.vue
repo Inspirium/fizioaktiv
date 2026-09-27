@@ -3,7 +3,7 @@
     <!-- Header -->
     <div class="relative pb-16 bg-gray-200">
       <div class="absolute inset-0">
-        <img class="w-full h-full object-cover opacity-20" src="~assets/img/one.jpg" alt="">
+        <img class="w-full h-full object-cover opacity-20" src="/one.jpg" alt="" loading="lazy">
         <div class="absolute inset-0 bg-gray-100 mix-blend-multiply" aria-hidden="true" />
       </div>
       <div class="text-center relative max-w-7xl mx-auto py-24 px-4 sm:pt-12 sm:pb-32 sm:px-6 lg:px-8">
@@ -16,7 +16,7 @@
     <!-- Overlapping cards -->
     <section class="-mt-32 max-w-7xl mx-auto relative z-10 pb-16 px-4 sm:px-6 lg:px-8" aria-labelledby="contact-heading">
       <h2 id="contact-heading" class="sr-only">
-        Contact us
+        Kontakt
       </h2>
       <div class="grid grid-cols-1 gap-y-6 lg:gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
         <div v-for="link in supportLinks" :key="link.name" class="flex flex-col bg-white rounded-2xl shadow-xl">

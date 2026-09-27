@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import Hero from '~/components/Hero'
-import Test from '~/components/Test'
-import Services from '~/components/Services'
-import Tim from '~/components/Tim'
-import Contact from '~/components/Contact'
-
+usePageSeo({
+  title: 'Fizioterapija, masaže i terapije u Zagrebu',
+  description: 'FizioAktiv, Zagrebačka avenija 106, Zagreb – medicinske i sportske masaže, individualne vježbe, Bowen, Emmett, ANF, dry needling, elektroterapija i tretmani oblikovanja tijela.',
+})
 </script>
-
 
 <template>
   <div class="">
@@ -30,10 +27,8 @@ import Contact from '~/components/Contact'
       </div>
     </div>
     <Services :hide="true" />
-    <RouterView ></RouterView >
     <Tim />
     <Contact />
-    <router-view></router-view>
   </div>
 
 </template>

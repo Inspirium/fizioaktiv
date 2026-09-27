@@ -1,5 +1,9 @@
 {
   "private": true,
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -14,22 +18,13 @@
     "@nuxtjs/seo": "^3.4.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@tailwindcss/forms": "^0.5.11",
-    "autoprefixer": "^10.4.24",
-    "defu": "^6.1.4",
-    "pinia": "^3.0.4",
-    "pinia-plugin-persistedstate": "^3.2.3",
-    "vue-gtag-next": "^1.14.0"
+    "pinia": "^3.0.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.14.2",
-    "@iconify-json/carbon": "^1.2.18",
-    "@iconify-json/twemoji": "^1.2.5",
     "@pinia/nuxt": "^0.11.3",
-    "@unocss/nuxt": "^0.53.6",
-    "@vueuse/core": "^9.13.0",
-    "@vueuse/nuxt": "^9.13.0",
     "eslint": "^8.57.1",
-    "nuxt": "latest",
-    "typescript": "^4.9.5"
+    "nuxt": "~4.3.1",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,78 +1,47 @@
-<p align="center">
-<img src="https://user-images.githubusercontent.com/11247099/140462375-7b7ac4db-35b7-453c-8a05-13d8d20282c4.png" width="600"/>
-</p>
+# FizioAktiv
 
-<h2 align="center">
-<a href="https://github.com/antfu/vitesse">Vitesse</a> for Nuxt 3
-</h2><br>
+Web stranica [fizioaktiv.hr](https://www.fizioaktiv.hr) — Nuxt 4 + Tailwind, generira se kao statična stranica i hosta na Netlifyju.
 
-<pre align="center">
-🧪 Working in Progress
-</pre>
+## Razvoj
 
-<p align="center">
-<br>
-<a href="https://vitesse-nuxt3.netlify.app/">🖥 Online Preview</a>
-<br><br>
-<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
-</p>
-
-## Features
-
-- [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
-
-- ⚡️ Vite - Instant HMR
-
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-
-- 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
-
-- 🔥 The `<script setup>` syntax
-
-- 🍍 [State Management via Pinia](https://pinia.esm.dev/)
-
-- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
-
-- 🏎 Zero-config cloud functions and deploy
-
-- 🦾 TypeScript, of course
-
-## Plugins
-
-### Nuxt Modules
-
-- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs
-- [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
-- [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
-
-## IDE
-
-We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
-
-## Variations
-
-- [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3) - Vitesse for Nuxt 3
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
-
-## Try it now!
-
-### Online
-
-<a href="https://stackblitz.com/github/antfu/vitesse-nuxt3"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-nuxt3/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
+Potreban je Node 20+ i pnpm.
 
 ```bash
-npx degit antfu/vitesse-nuxt3 my-nuxt3-app
-cd my-nuxt3-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+pnpm install
+pnpm dev        # http://localhost:3000
+pnpm generate   # statični build u .output/public (dist)
+pnpm preview
 ```
+
+## Struktura
+
+- `pages/` — stranice; `pages/usluge/*.vue` su pojedinačne usluge
+- `stores/services.ts` — popis usluga (naslovi, kratki opisi, slike)
+- `data/cjenik.ts` — **cjenik**; cijene se mijenjaju ovdje (vidi niže)
+- `composables/usePageSeo.ts` — naslov/opis za SEO; stranice usluga koriste `useServiceSeo('<slug>')` koji podatke čita iz storea
+- `composables/useCookieConsent.ts`, `components/CookieBanner.vue`, `plugins/gtag.client.ts` — Google Analytics se učitava tek nakon privole
+- `public/` — slike; za kartice usluga postoji i manja verzija s nastavkom `-m.jpg`
+
+## Nova usluga
+
+1. Dodaj zapis u `zdravlje` ili `ljepota` i cjenik u `stores/services.ts`
+2. Napravi `pages/usluge/<slug>.vue` (kopiraj postojeću) i na vrhu pozovi `useServiceSeo('<slug>')`
+3. Dodaj sliku `/<ime>.jpg` i manju `/<ime>-m.jpg` u `public/`
+
+## Cjenik i sidrene cijene (NN 101/2026)
+
+Od 1. 10. 2026. uz svaku cijenu mora biti istaknuta sidrena cijena (cijena na dan 10. 9. 2026.),
+a na stranici objavljen strojno čitljiv cjenik. Oboje se generira iz `data/cjenik.ts`:
+
+- prikaz na `/cjenik` i u izvodima cjenika na stranicama usluga (`components/CjenikRed.vue`)
+- CSV na `/cjenici/<naziv-po-propisu>.csv` i stalni link `/cjenici/cjenik.csv` (`server/routes/cjenici/[file].ts`, prerenderira se)
+
+Kod promjene cijene:
+1. promijeni `price` (ne `sidrena`!)
+2. postavi `CIJENE_AZURIRANE` na trenutak promjene — mijenja se naziv CSV datoteke
+3. deploy prije 8 sati sljedećeg dana
+
+## Deploy
+
+Netlify pokreće `pnpm run generate` i objavljuje `dist` (vidi `netlify.toml`).
+Kontakt forma šalje podatke na `frmr.inspirium.hr`.

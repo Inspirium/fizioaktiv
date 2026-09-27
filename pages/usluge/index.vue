@@ -1,6 +1,14 @@
+<script setup lang="ts">
+usePageSeo({
+  title: 'Usluge – zdravlje i ljepota',
+  description: 'Pregled svih usluga FizioAktiva: masaže, vježbe, Bowen i Emmett terapija, ANF, elektroterapija, UZV, dry needling, VacuSlim 48, anticelulitna masaža i limfna drenaža.',
+  image: '/usluge.jpg',
+})
+</script>
+
 <template>
   <div class="">
-    <Hero :image="'usluge.jpg'">
+    <Hero :image="'/usluge.jpg'">
       <slot>
         <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins text-5xl lg:text-6xl">
           Zdravlje<span class="text-fizio-500"> & Ljepota</span>
@@ -19,11 +27,3 @@
   </div>
 
 </template>
-
-<script setup lang="ts">
-import Hero from '~/components/Hero'
-import Test from '~/components/Test'
-import Services from '~/components/Services'
-import Tim from '~/components/Tim'
-
-</script>

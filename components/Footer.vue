@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed, defineComponent, h } from 'vue'
-import { LocationMarkerIcon, MailOpenIcon, PhoneIcon } from '@heroicons/vue/outline'
-
+import { CJENIK_CSV_PUTANJA } from '~/data/cjenik'
 import { servicesList } from '~/stores/services'
+
 const sitedata = servicesList()
+const year = new Date().getFullYear()
+const { openSettings: openCookieSettings } = useCookieConsent()
 
 const navigation = {
   company: [
@@ -13,9 +14,7 @@ const navigation = {
     { name: 'Kontakt', href: '/kontakt' },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: 'Politika privatnosti', href: '/privatnost' },
   ],
   social: [
     {
@@ -73,7 +72,7 @@ const navigation = {
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="md:flex md:justify-between">
         <div class="xl:grid-col-1">
-          <img class="h-16" src="~assets/img/logo.svg" alt="Company name">
+          <img class="h-16" src="/logo.svg" alt="FizioAktiv logo">
           <p class="mt-8 text-gray-500 text-xl">
             Zagrebačka avenija 106, 10000 Zagreb<br>
             091/5133-721, 098/634-584<br>
@@ -83,7 +82,7 @@ const navigation = {
             Povežite se s nama:
           </p>
           <div class="flex space-x-6">
-            <a v-for="item in navigation.social" :key="item.name" :to="item.href" class="text-gray-400 hover:text-gray-500">
+            <a v-for="item in navigation.social" :key="item.name" :href="item.href" target="_blank" rel="noopener" class="text-gray-400 hover:text-gray-500">
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-10 w-10" aria-hidden="true" />
             </a>
@@ -132,7 +131,12 @@ const navigation = {
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
         <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2022. FizioAktiv, Obrt za zdravlje i njegu tijela
+          &copy; {{ year }}. FizioAktiv, Obrt za zdravlje i njegu tijela
+          <template v-for="item in navigation.legal" :key="item.name">
+            · <NuxtLink :to="item.href" class="hover:text-fizio-500">{{ item.name }}</NuxtLink>
+          </template>
+          · <a :href="CJENIK_CSV_PUTANJA" class="hover:text-fizio-500" download>Cjenik (CSV)</a>
+          · <button type="button" class="hover:text-fizio-500" @click="openCookieSettings">Postavke kolačića</button>
         </p>
       </div>
     </div>

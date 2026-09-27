@@ -1,24 +1,8 @@
 <script setup lang="ts">
-import { defineComponent, defineProps, h, ref, watch } from 'vue'
-import Hero from '~/components/Hero'
-import Contact from '~/components/Contact'
-import Contentlead from '~/components/Contentlead'
-import Tim from '~/components/Tim'
-import Pricelist from '~/components/Pricelist'
-import Services from '~/components/Services'
-
-const route = useRoute()
-
+useServiceSeo('masaza', 'Medicinska i sportska masaža')
 </script>
 
 <template>
-  <Html :lang="'en-US'">
-    <Head>
-      <Title>svijet relaksacije title</Title>
-      <Meta name="description" :content="`My page's description`" />
-    </Head>
-  </Html>
-
   <div class="">
     <Hero :image="'/masaza-usluge.jpg'">
       <slot>
@@ -31,7 +15,7 @@ const route = useRoute()
         </p>
       </slot>
     </Hero>
-    <main>
+    <div>
       <div class="grid lg:grid-cols-[2rem_auto_250px_800px_250px_auto_2rem] mx-auto text-left text-gray-600 font-open space-y-5 px-6">
         <p class="lg:col-start-4 text-xl sm:text-2xl mb-8 leading-8 sm:leading-10 font-semibold font-poppins">
           Masaža je najstariji oblik liječenja koji se od davnina primjenjuje u medicinske, relaksirajuće i kozmetičke svrhe. Masaža opušta tijelo i uklanja napetost i bolove u mišićima te ubrzava cirkulaciju krvi i limfe, što smanjuje bolna stanja i potiče opskrbu tkiva kisikom i hranjivim tvarima.
@@ -67,8 +51,8 @@ const route = useRoute()
           U FizioAktivu anticelulitnu masažu najčešće radimo u kombinaciji s aparaturnom limfnom drenažom i Vacuslim 48 metodama.
         </p>
       </div>
-      <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
-    </main>
+      <NuxtLink to="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</NuxtLink>
+    </div>
     <Contentlead :image="'/masaza-usluge.jpg'" :content="'Svaka masaža Vašem tijelu vrijedi kao 7-8 sati sna'" />
     <Pricelist pricelist-part="masaze" />
     <Contact />

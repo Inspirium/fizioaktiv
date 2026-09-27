@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useServiceSeo('emmett', 'Emmett tehnika')
+</script>
+
 <template>
   <div class="">
     <Hero :image="'/emmet.jpg'">
@@ -11,7 +15,7 @@
         </p>
       </slot>
     </Hero>
-    <main>
+    <div>
       <div class="grid lg:grid-cols-[2rem_auto_250px_800px_250px_auto_2rem] mx-auto text-left text-gray-600 font-open space-y-5 px-6">
         <p class="lead">Emmett tehnika jedinstveni je oblik tjelesne terapije koji podrazumijeva primjenu laganog pritiska prstima na određene točke na tijelu – takozvane Emmett točke, koje su ime dobile po autoru tehnike Rossu Emmettu.
         </p>
@@ -45,8 +49,8 @@
           <li class="font-semibold text-lg">poboljšanje gibljivosti kod starijih osoba</li>
         </ul>
       </div>
-      <a href="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</a>
-    </main>
+      <NuxtLink to="/kontakt" class="inline-block px-8 mt-16 mb-8 bg-gradient-to-r from-orange-500 to-rose-500 rounded-md shadow py-4 text-2xl sm:text-3xl uppercase font-medium text-white text-center transition duration-400 hover:to-rose-600 ">Rezerviraj termin!</NuxtLink>
+    </div>
     <Contentlead :image="'/emmet.jpg'" :content="'Otklanjanjem loših obrazaca pokretanja i/ili ravnoteže oslobađa se prostor za stvaranje novih obrazaca, bez bola i s boljom ravnotežom'"/>
     <Pricelist pricelistPart="emmett"></Pricelist>
     <Contact />
@@ -55,12 +59,4 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref, defineProps, watch, defineComponent, h } from 'vue'
-import Hero from '~/components/Hero'
-import Contact from '~/components/Contact'
-import Contentlead from '~/components/Contentlead'
-import Tim from '~/components/Tim'
-import Pricelist from '~/components/Pricelist'
-import Services from '~/components/Services'
-</script>
+
